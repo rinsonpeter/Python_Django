@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a67c8405-a514-423c-a1b5-ba226e811705" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Python_Django.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/CrossroadsTeam.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/average.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/date_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/fillles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/inheritance sample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/kinter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/objectsclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/operator_overloading.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/out.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/plat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/pyvenv.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/scope_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/starpyramid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/swap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/trunkz.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/turktle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/crossroads/turt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/ex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/helloword.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/myfirstnotbook.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/primebtw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/stringformatting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/turtle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/udemy/turtleidle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/Emplyees" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/emp_sql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/new.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Assignments/Bubblesort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Assignments/Fibonacci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Assignments/palindrome.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Assignments/starpyramid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Dictionary/employees.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Dictionary/filewordcount.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Dictionary/recursivechar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Dictionary/tttt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Dictionary/wordcount.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Flowcontrols/AgeCalculator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Flowcontrols/evenodd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Flowcontrols/flowcontrols.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Flowcontrols/largestnum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Flowcontrols/maxof3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Flowcontrols/positive neg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Flowcontrols/secondlargest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Functions/cubefunction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Functions/factorial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Functions/funct.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Functions/functoperation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/ListCompr/ListComp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/multiplicationtable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/nestedforstar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/primeinbtw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/primenumber.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/print10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/printtillrange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/revrese.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/sumoddevenforloop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/sumofcubes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/Looping/sumofnnumbers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/binarysearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/douplicatelist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/list2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/list3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/list_pair.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/listpairsearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/listpattern.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/listprograms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/listsearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/nestedlist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/collections/setpassfail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/covid/coro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/covid/corona" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/demofile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/file_even_odd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/movies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/movieslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/numbers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/temperature data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/temperaturedit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/words" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/files/wordscount.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/findall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/lamdaa1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/mobilevalid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/reducefn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/refullmatch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/regpattern.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/remdule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/remodpattern.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/rvehicleregfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/validgmail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/vehiclereg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/functional prog/vehregfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/bankapp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/edetails" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/emp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/employeeoops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/methodoverload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/multilevelinheritance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/multiple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/operatoroverload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/overriding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/oops/overriding2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Language fundamentals/tryExcept/tryexcept1.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gfR2njUVNsz6ZMqrsSvFNmmdpe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.tryexcept1">
+    <configuration name="clientexample6" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Python_Django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Language fundamentals/socket_prog/28sep2020" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Language fundamentals/socket_prog/28sep2020/clientexample6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="multiple_args" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Language fundamentals/Functions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Language fundamentals/Functions/multiple_args.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="networkingexample6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Language fundamentals/socket_prog/28sep2020" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Language fundamentals/socket_prog/28sep2020/networkingexample6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="thread_4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Language fundamentals/Multithreading" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Language fundamentals/Multithreading/thread_4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tryexcept1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/tryExcept" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/tryExcept/tryexcept1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.clientexample6" />
+      <item itemvalue="Python.multiple_args" />
+      <item itemvalue="Python.networkingexample6" />
+      <item itemvalue="Python.thread_4" />
+      <item itemvalue="Python.tryexcept1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tryexcept1" />
+        <item itemvalue="Python.networkingexample6" />
+        <item itemvalue="Python.clientexample6" />
+        <item itemvalue="Python.multiple_args" />
+        <item itemvalue="Python.thread_4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a67c8405-a514-423c-a1b5-ba226e811705" name="Default Changelist" comment="" />
+      <created>1598503455854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598503455854</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="568" y="223" key="#Notifications" timestamp="1598782858209">
+      <screen x="0" y="0" width="1366" height="722" />
+    </state>
+    <state x="568" y="223" key="#Notifications/0.0.1366.722@0.0.1366.722" timestamp="1598782858209" />
+    <state x="137" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601278415039">
+      <screen x="0" y="0" width="1366" height="722" />
+    </state>
+    <state x="137" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.722@0.0.1366.722" timestamp="1601278415039" />
+    <state x="766" y="162" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600695349396">
+      <screen x="0" y="0" width="1366" height="722" />
+    </state>
+    <state x="766" y="162" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.722@0.0.1366.722" timestamp="1600695349396" />
+    <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598974591969">
+      <screen x="0" y="0" width="1366" height="722" />
+    </state>
+    <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.722@0.0.1366.722" timestamp="1598974591969" />
+    <state width="1345" height="149" key="GridCell.Tab.0.bottom" timestamp="1602085442970">
+      <screen x="0" y="0" width="1366" height="706" />
+    </state>
+    <state width="1345" height="149" key="GridCell.Tab.0.bottom/0.0.1366.706@0.0.1366.706" timestamp="1602085442970" />
+    <state width="659" height="152" key="GridCell.Tab.0.bottom/0.0.1366.722@0.0.1366.722" timestamp="1601352767264" />
+    <state width="1345" height="149" key="GridCell.Tab.0.center" timestamp="1602085442969">
+      <screen x="0" y="0" width="1366" height="706" />
+    </state>
+    <state width="1345" height="149" key="GridCell.Tab.0.center/0.0.1366.706@0.0.1366.706" timestamp="1602085442969" />
+    <state width="659" height="152" key="GridCell.Tab.0.center/0.0.1366.722@0.0.1366.722" timestamp="1601352767263" />
+    <state width="1345" height="149" key="GridCell.Tab.0.left" timestamp="1602085442969">
+      <screen x="0" y="0" width="1366" height="706" />
+    </state>
+    <state width="1345" height="149" key="GridCell.Tab.0.left/0.0.1366.706@0.0.1366.706" timestamp="1602085442969" />
+    <state width="659" height="152" key="GridCell.Tab.0.left/0.0.1366.722@0.0.1366.722" timestamp="1601352767263" />
+    <state width="1345" height="149" key="GridCell.Tab.0.right" timestamp="1602085442969">
+      <screen x="0" y="0" width="1366" height="706" />
+    </state>
+    <state width="1345" height="149" key="GridCell.Tab.0.right/0.0.1366.706@0.0.1366.706" timestamp="1602085442969" />
+    <state width="659" height="152" key="GridCell.Tab.0.right/0.0.1366.722@0.0.1366.722" timestamp="1601352767264" />
+    <state x="450" y="9" width="916" height="711" key="SettingsEditor" timestamp="1599797892373">
+      <screen x="0" y="0" width="1366" height="722" />
+    </state>
+    <state x="450" y="9" width="916" height="711" key="SettingsEditor/0.0.1366.722@0.0.1366.722" timestamp="1599797892373" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1599825618133">
+      <screen x="0" y="0" width="1366" height="722" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1366.722@0.0.1366.722" timestamp="1599825618133" />
+    <state x="346" y="43" width="672" height="678" key="search.everywhere.popup" timestamp="1600703747008">
+      <screen x="0" y="0" width="1366" height="722" />
+    </state>
+    <state x="346" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.722@0.0.1366.722" timestamp="1600703747008" />
+  </component>
+</project>

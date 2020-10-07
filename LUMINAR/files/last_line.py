@@ -1,0 +1,7 @@
+fileHandle = open ( 'lastline',"r" )
+print("filehandle",fileHandle,"\ntype",type(fileHandle))
+lineList = fileHandle.readlines()
+fileHandle.close()
+print (lineList)
+print ("The last line is:")
+print (lineList[-1])

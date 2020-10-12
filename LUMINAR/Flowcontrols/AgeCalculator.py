@@ -1,9 +1,9 @@
 bdate=int(input("enter birth date: "))
 bmonth=int(input("enter birth month: "))
 byear=int(input("enter birth year: "))
-cdate=26
+cdate=8
 cyear=2020
-cmonth=7
+cmonth=10
 Age=0
 if (byear<cyear):
     Age = (cyear - byear)      #2020-2019

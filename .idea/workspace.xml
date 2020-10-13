@@ -20,21 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67c8405-a514-423c-a1b5-ba226e811705" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/Assignments/starpyramid.py" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/Assignments/starpyramid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/Flowcontrols/AgeCalculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/Flowcontrols/AgeCalculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/Regist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/grid_system.html" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/grid_system.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/navigat.html" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/navigat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/html_first.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/images/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/images/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/images/python.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/username.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/username_css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_youtube.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/crossroads/turktle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/crossroads/turktle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/crossroads/turt.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +40,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gfR2njUVNsz6ZMqrsSvFNmmdpe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -230,30 +218,30 @@
       <screen x="0" y="0" width="1366" height="722" />
     </state>
     <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.722@0.0.1366.722" timestamp="1598974591969" />
-    <state width="1345" height="186" key="GridCell.Tab.0.bottom" timestamp="1602519184697">
+    <state width="1345" height="186" key="GridCell.Tab.0.bottom" timestamp="1602563608715">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.706@0.0.1366.706" timestamp="1602232535735" />
     <state width="659" height="152" key="GridCell.Tab.0.bottom/0.0.1366.722@0.0.1366.722" timestamp="1601352767264" />
-    <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602519184697" />
-    <state width="1345" height="186" key="GridCell.Tab.0.center" timestamp="1602519184696">
+    <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602563608715" />
+    <state width="1345" height="186" key="GridCell.Tab.0.center" timestamp="1602563608714">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.706@0.0.1366.706" timestamp="1602232535735" />
     <state width="659" height="152" key="GridCell.Tab.0.center/0.0.1366.722@0.0.1366.722" timestamp="1601352767263" />
-    <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602519184696" />
-    <state width="1345" height="186" key="GridCell.Tab.0.left" timestamp="1602519184695">
+    <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602563608714" />
+    <state width="1345" height="186" key="GridCell.Tab.0.left" timestamp="1602563608693">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.706@0.0.1366.706" timestamp="1602232535735" />
     <state width="659" height="152" key="GridCell.Tab.0.left/0.0.1366.722@0.0.1366.722" timestamp="1601352767263" />
-    <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602519184695" />
-    <state width="1345" height="186" key="GridCell.Tab.0.right" timestamp="1602519184696">
+    <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602563608693" />
+    <state width="1345" height="186" key="GridCell.Tab.0.right" timestamp="1602563608715">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.706@0.0.1366.706" timestamp="1602232535735" />
     <state width="659" height="152" key="GridCell.Tab.0.right/0.0.1366.722@0.0.1366.722" timestamp="1601352767264" />
-    <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602519184696" />
+    <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602563608715" />
     <state x="450" y="9" width="916" height="711" key="SettingsEditor" timestamp="1599797892373">
       <screen x="0" y="0" width="1366" height="722" />
     </state>

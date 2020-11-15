@@ -1,10 +1,11 @@
 line="hai hello ha22i 22 hey sandra " \
      "hello sandra hai hello"
-print("line         :",line)
-print("type of line :",type(line))
 words=line.rstrip("\n").split(' ')
-print("words        :",words)
-print("type of words:",type(words))
+# print("line         :",line)
+# print("type of line :",type(line))
+
+# print("words        :",words)
+# print("type of words:",type(words))
 dict={}
 dictword={}
 

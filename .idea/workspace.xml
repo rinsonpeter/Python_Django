@@ -20,8 +20,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67c8405-a514-423c-a1b5-ba226e811705" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LUMINAR/Dictionary/tweet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LUMINAR/Dictionary/tweeted" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Dictionary/wordcount.py" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/Dictionary/wordcount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Flowcontrols/AgeCalculator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Flowcontrols/evenodd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Flowcontrols/flowcontrols.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Flowcontrols/largestnum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Flowcontrols/maxof3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Flowcontrols/positive neg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Flowcontrols/secondlargest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Functions/cubefunction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Functions/factorial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Functions/funct.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Functions/functoperation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Functions/multiple_args.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/multiplicationtable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/nestedforstar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/primeinbtw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/primenumber.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/print10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/printtillrange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/revrese.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/sumoddevenforloop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/sumofcubes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/Looping/sumofnnumbers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/first_bootstrp.html" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/first_bootstrp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/grid_system.html" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/grid_system.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/navigat.html" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/bootstrap/navigat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/html basic/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/html basic/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/Assignment_javascript/DOC_MODEL/doc_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/Assignment_javascript/DOC_MODEL/doc_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/Assignment_javascript/DOC_MODEL/method.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/Assignment_javascript/DOC_MODEL/method.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/Assignment_javascript/HW OCT 16/res.css" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/Assignment_javascript/HW OCT 16/res.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/Assignment_javascript/HW OCT 16/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/Assignment_javascript/HW OCT 16/res.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/My_javascript/Assignment_javascript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/decision.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/decison.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/dict_demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/dict_demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/function_dem0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/function_demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/oops.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/oops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/question_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/VS_code/html_progs/javascript/question_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/binarysearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/douplicatelist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/list2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/list3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/list_pair.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/listpairsearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/listpattern.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/listprograms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/listsearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/nestedlist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/collections/setpassfail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/CSS Prog/box_css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/CSS Prog/box_model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/CSS Prog/html2_css2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/CSS Prog/html_css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/CSS Prog/html_css1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/CSS Prog/style2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/Regist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/html_first.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/images/python.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/username.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/html_progs/username_css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUMINAR/oops/methodoverload.py" beforeDir="false" afterPath="$PROJECT_DIR$/LUMINAR/oops/methodoverload.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +117,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/firstproject" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.nestedforstar">
-    <configuration name="Bubblesort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.tweet">
+    <configuration name="employees" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Django" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,11 +129,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/Assignments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/Dictionary" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/Assignments/Bubblesort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/Dictionary/employees.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -74,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="add5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="methodoverload" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Django" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,11 +150,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/Assignments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/oops" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/Assignments/add5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/oops/methodoverload.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="heeyyy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="recursivechar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Django" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,11 +171,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/Assignments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/Dictionary" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/Assignments/heeyyy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/Dictionary/recursivechar.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,7 +184,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="list3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="tweet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Django" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,11 +192,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/collections" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/Dictionary" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/collections/list3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/Dictionary/tweet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,7 +205,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nestedforstar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="wordcount" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Django" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,11 +213,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/Looping" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LUMINAR/Dictionary" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/Looping/nestedforstar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LUMINAR/Dictionary/wordcount.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,19 +227,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Bubblesort" />
-      <item itemvalue="Python.heeyyy" />
-      <item itemvalue="Python.add5" />
-      <item itemvalue="Python.list3" />
-      <item itemvalue="Python.nestedforstar" />
+      <item itemvalue="Python.employees" />
+      <item itemvalue="Python.methodoverload" />
+      <item itemvalue="Python.recursivechar" />
+      <item itemvalue="Python.tweet" />
+      <item itemvalue="Python.wordcount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.nestedforstar" />
-        <item itemvalue="Python.list3" />
-        <item itemvalue="Python.add5" />
-        <item itemvalue="Python.heeyyy" />
-        <item itemvalue="Python.Bubblesort" />
+        <item itemvalue="Python.tweet" />
+        <item itemvalue="Python.methodoverload" />
+        <item itemvalue="Python.employees" />
+        <item itemvalue="Python.wordcount" />
+        <item itemvalue="Python.recursivechar" />
       </list>
     </recent_temporary>
   </component>
@@ -210,38 +278,43 @@
       <screen x="0" y="0" width="1366" height="722" />
     </state>
     <state x="137" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.722@0.0.1366.722" timestamp="1601278415039" />
-    <state x="766" y="162" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600695349396">
-      <screen x="0" y="0" width="1366" height="722" />
+    <state x="766" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603339696050">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="766" y="162" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.722@0.0.1366.722" timestamp="1600695349396" />
+    <state x="766" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1603339696050" />
     <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598974591969">
       <screen x="0" y="0" width="1366" height="722" />
     </state>
     <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.722@0.0.1366.722" timestamp="1598974591969" />
-    <state width="1345" height="186" key="GridCell.Tab.0.bottom" timestamp="1602563608715">
+    <state x="804" y="127" key="FileChooserDialogImpl" timestamp="1603821288909">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="804" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1603821288909" />
+    <state width="602" height="610" key="GridCell.Tab.0.bottom" timestamp="1603533750319">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.706@0.0.1366.706" timestamp="1602232535735" />
     <state width="659" height="152" key="GridCell.Tab.0.bottom/0.0.1366.722@0.0.1366.722" timestamp="1601352767264" />
-    <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602563608715" />
-    <state width="1345" height="186" key="GridCell.Tab.0.center" timestamp="1602563608714">
+    <state width="602" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1603533750319" />
+    <state width="602" height="610" key="GridCell.Tab.0.center" timestamp="1603533750319">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.706@0.0.1366.706" timestamp="1602232535735" />
     <state width="659" height="152" key="GridCell.Tab.0.center/0.0.1366.722@0.0.1366.722" timestamp="1601352767263" />
-    <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602563608714" />
-    <state width="1345" height="186" key="GridCell.Tab.0.left" timestamp="1602563608693">
+    <state width="602" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1603533750319" />
+    <state width="602" height="610" key="GridCell.Tab.0.left" timestamp="1603533750319">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.706@0.0.1366.706" timestamp="1602232535735" />
     <state width="659" height="152" key="GridCell.Tab.0.left/0.0.1366.722@0.0.1366.722" timestamp="1601352767263" />
-    <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602563608693" />
-    <state width="1345" height="186" key="GridCell.Tab.0.right" timestamp="1602563608715">
+    <state width="602" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1603533750319" />
+    <state width="602" height="610" key="GridCell.Tab.0.right" timestamp="1603533750319">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.706@0.0.1366.706" timestamp="1602232535735" />
     <state width="659" height="152" key="GridCell.Tab.0.right/0.0.1366.722@0.0.1366.722" timestamp="1601352767264" />
-    <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602563608715" />
+    <state width="602" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1603533750319" />
     <state x="450" y="9" width="916" height="711" key="SettingsEditor" timestamp="1599797892373">
       <screen x="0" y="0" width="1366" height="722" />
     </state>

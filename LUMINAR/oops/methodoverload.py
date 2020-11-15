@@ -12,3 +12,4 @@ class math:
         print(num1+num2)
 
 m=math()
+m.add(20,22)

@@ -10,4 +10,4 @@ for j in range(low,upper+1):
         else:
             sum+=j
 
-print("sum of prime numbers in between range: "sum)
+print("sum of prime numbers in between lower and upper limit: ",sum)

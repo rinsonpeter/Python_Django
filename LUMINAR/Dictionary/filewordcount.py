@@ -1,7 +1,7 @@
 line=open("tttt","r")
 #print("line         :",line)
 #print("type of line :",type(line))
-dict = {}
+dictl = {}
 dictword = {}
 
 for words in line:
@@ -11,10 +11,10 @@ for words in line:
 
     for words in word:
         for j in words:
-            if j not in dict:
-                dict[j] = 1
+            if j not in dictl:
+                dictl[j] = 1
             else:
-                dict[j] += 1
+                dictl[j] += 1
 
     for words in word:
         if words not in dictword:
@@ -22,9 +22,9 @@ for words in line:
         else:
             dictword[words] += 1
 
-#print("dict         :",dict)
-for i in dict:
-    print(i,":",dict[i])
+#print("dictl         :",dictl)
+for i in dictl:
+    print(i,":",dictl[i])
 print("---------------------------")
 #print("dictword     :",dictword)
 for i in dictword:

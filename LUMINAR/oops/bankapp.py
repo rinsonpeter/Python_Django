@@ -34,7 +34,9 @@ class bank(person):
 obj = bank(1001, "Manu,", 30000)
 n = 1
 while (n == 1):
+    print()
     print("1.Check Ac details\n2.Deposit\n3.Withdraw\n4.exit")
+    print()
     x = int(input("Enter your choice: "))
     if x == 1:
         obj.balenq()

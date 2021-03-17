@@ -1,4 +1,4 @@
-f=open("numbers","r")
+f=open("n","r")
 lst=[]
 odd=[]
 even=[]

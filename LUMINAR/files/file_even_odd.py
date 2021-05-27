@@ -1,4 +1,4 @@
-f=open("n","r")
+f=open("n.txt","w")
 lst=[]
 odd=[]
 even=[]

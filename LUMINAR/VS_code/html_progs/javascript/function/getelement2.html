@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #screen{
+        width:500px;
+        height:400px;
+        border:solid 5px;
+    }
+</style>
+<body>
+    <div id="screen">
+
+    </div>
+    <br>
+    <button onclick="color('red')">Red</button>
+    <button onclick="color('green')">Green</button>
+    <button onclick="color('yellow')">Yellow</button>
+    <button onclick="color('blue')">Blue</button>
+
+    <script>
+        function color(clr){
+            document.getElementById("screen").style.backgroundColor=clr
+        }
+    </script>
+
+</body>
+</html>

@@ -7,7 +7,7 @@ for i in range(limit):
 print("unsorted",lst)
 
 for j in range(limit):
-    for k in range(j-1):
+    for k in range(limit-1-j):
         if(lst[k]>lst[k+1]):
             temp=lst[k]
             lst[k]=lst[k+1]

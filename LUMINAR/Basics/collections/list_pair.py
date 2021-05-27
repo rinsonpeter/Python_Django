@@ -6,5 +6,6 @@ for i in lst:
     for j in lst:
         if (i+j==element):
             print(i,j)
+            
         else:
             pass

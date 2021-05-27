@@ -1,5 +1,5 @@
-fileHandle = open ( 'lastline',"r" )
-print("filehandle",fileHandle,"\ntype",type(fileHandle))
+fileHandle = open('F:\\python\\Python\\Luminar\Python_Django\\LUMINAR\\files\\lastline.txt',"r" )
+print("filehandle variable: ",fileHandle,"\nType of filehandle variable",type(fileHandle))
 lineList = fileHandle.readlines()
 fileHandle.close()
 print (lineList)

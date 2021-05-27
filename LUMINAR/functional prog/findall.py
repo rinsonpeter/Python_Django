@@ -8,4 +8,5 @@ x = re.findall("he..o", txt)
 print(x)
 print(type(x))
 
-#y=re.finditer()
+y=re.finditer("/s",txt)
+print(y)

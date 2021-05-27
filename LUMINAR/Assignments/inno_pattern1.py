@@ -14,5 +14,5 @@ with open('new.txt', 'a') as f:
             f.write(str(j))
 
         print(" ",file=f)
-                        
+                   
 f.close()

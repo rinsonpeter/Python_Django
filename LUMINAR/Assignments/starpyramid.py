@@ -5,9 +5,8 @@
 
 x=int(input("enter a limit: "))
 for i in range(0,x):
-    for j in range(0,x-1-i):    #3,2,1              # 5-1-0:4    5-1-1:3   5-1-2:2
+    for j in range(0,x-1-i):    #3,2,1        # 5-1-0:4    5-1-1:3   5-1-2:2
         print(end=" ")
-    for k in range(0,i+1):      #1,2,3              # 0+1:1      1+1:2   2+1: 3
+    for k in range(0,i+1):      #1,2,3         # 0+1:1      1+1:2   2+1: 3
         print("*",end=" ")
     print()
-

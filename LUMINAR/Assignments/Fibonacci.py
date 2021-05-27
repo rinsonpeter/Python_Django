@@ -11,9 +11,3 @@ for i in range(0,n):
     print(sum,end=" ")
     x=y
     y=sum
-
-
-
-
-
-

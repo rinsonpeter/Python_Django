@@ -9,7 +9,7 @@ x = re.finditer("\d", txt)
 #print(x)
 for match in x:
     print("index ",match.start(), ":", match.group())
-
+print(type(x))
 if x:
   print("Yes, there is at least one match!")
 else:

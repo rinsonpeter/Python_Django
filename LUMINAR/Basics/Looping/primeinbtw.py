@@ -5,9 +5,10 @@ sum=0
 for j in range(low,upper+1):
     if (j>1):
         for i in range(2, j):
-            if (j % i) == 0: 
+            if (j % i) == 0:
                 break
         else:
+            print(j)
             sum+=j
 
-print("sum of prime numbers in between range: "sum)
+print("sum of prime numbers in between range: ",sum)

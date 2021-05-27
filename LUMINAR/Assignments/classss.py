@@ -11,15 +11,12 @@ class B(X):
     # def hi(self):
     #     print('inside B')
 
-
 class C(B,A):
     pass
 
 # x=int(input("enter a number: "))
 obj = C()
 obj.hi()
-
-
 
 print("-------------------------------------------------")
 print(C.mro())

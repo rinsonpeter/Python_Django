@@ -1,0 +1,32 @@
+body{
+    background-image: url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=);
+    background-repeat: repeat;
+    background-size: contain;
+}
+li{
+    color: orange;
+}
+th{
+    color: purple;
+}
+td{
+    color: seagreen;
+}
+.firstdiv{
+    text-shadow: sienna;
+    text-decoration-thickness: 10px;
+    color: rgb(223, 17, 161);
+    background-color: springgreen;
+    text-size-adjust: 100%;
+    padding-left: 100px;
+
+}
+#thirddiv{
+    color: tomato;
+    text-decoration-line: line-through;
+    text-decoration-color: yellow;
+}
+h3 + table{
+    border: violet;
+    border-style: ridge;
+}

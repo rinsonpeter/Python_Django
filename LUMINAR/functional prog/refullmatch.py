@@ -1,5 +1,5 @@
 from re import *
-rule='[a-k][369][a-zA-Z]*'
+rule='^[1-9][0-9]{9}$'
 
 varname=input("enter variable name:")
 matcher=fullmatch(rule,varname)

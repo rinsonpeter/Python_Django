@@ -7,14 +7,21 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-
+.loc{
+    height: 1px;
+    width: 1px;
+}
 
 [class*="col-"]{
     margin-left: 1.5%;
 
 }
+.day{
+  
 
+}
 .banner{
+
     margin-top: 10%;
 }
 .carousel-item{

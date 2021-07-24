@@ -1,4 +1,4 @@
-line=open("tttt","r")
+line=open("/media/trunkz/AKHIL/python/Python/Luminar/Python_Django/LUMINAR/Dictionary/tttt","r")
 #print("line         :",line)
 #print("type of line :",type(line))
 dictl = {}
@@ -24,7 +24,7 @@ for words in line:
 
 #print("dictl         :",dictl)
 for i in dictl:
-    print(i,":",dictl[i])
+    print(i,':',dictl[i])
 print("---------------------------")
 #print("dictword     :",dictword)
 for i in dictword:

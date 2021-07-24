@@ -12,4 +12,5 @@ for j in range(0, len(x)):
         x[j] = x[j] - 1
     else:
         pass
+    
 print("updated list",x)

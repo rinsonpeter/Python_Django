@@ -9,4 +9,4 @@ print('Updated animals list: ', animals)
 animals.pop(0)
 
 # Updated animals List
-print('Updated animals list: ', animals
+print('Updated animals list: ', animals)

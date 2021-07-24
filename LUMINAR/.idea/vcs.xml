@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/VS_code/html_progs/javascript/Assignment_javascript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/html_progs/javascript" vcs="Git" />
   </component>
 </project>

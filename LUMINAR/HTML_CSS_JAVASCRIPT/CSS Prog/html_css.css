@@ -1,0 +1,18 @@
+/* tag/id/class{
+    property:value;
+    property2:value2;
+
+     */
+    h1{
+    color: red;
+
+    }
+    /*  #id   selctor is # */
+    #one{
+        color: RGB(47, 63, 186);
+
+    }
+    /* class selcctor is .*/
+    .two{
+        color: RGB(20, 145, 54);
+    }

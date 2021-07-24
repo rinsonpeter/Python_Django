@@ -1,0 +1,302 @@
+﻿AUDVIKLABS:
+
+    AudvikLabs is a boutique development firm whose vision 
+    is creating secure and intelligent applications and platforms.
+    We leverage the latest technologies, such as Machine Learning,
+    to tackle the most challenging DevOps, Cloud Implementation 
+    (AWS, Azure, Google Cloud) and application development projects.
+
+INTRO:
+        I am Rinson Peter,I am from Fortkochin,
+        I am a BCA graduate passed out 2014.
+        
+        After that I worked at conduent 2 years
+        as A Payroll Associate(US Pension Payroll)
+
+        Then I moved to Zellis 
+        worked on UK payroll2 years.
+
+        I realized that I was nt getting Skills
+        or learning anything, so I wanted to make a 
+        switch to IT field.
+
+        learnt Python basics online 
+
+        did a 4 month course on Python Django
+        also did 2 month internship there itself.
+        
+        after that I did an 1 month intersip with 
+        Mindcoopers Kochi. JUNE 2021
+   
+MIDDLEWARES:
+	
+      What is the purpose of Middlewares in Django?
+Middleware is used to perform a function in the application. The functions can be a security, session, csrf protection, authentication etc. Django provides various built-in middleware and also allows us to write our own 
+
+STATIC: (CLASS VARIABLE(static) AND INSTANCE VARIABLE)
+    
+    When we declare a variable inside a class but outside any method, it is called as class or static variable in python. Class or static variable can be referred through a class but not directly through an instance.
+
+    classname.staticvaribale
+    or
+    obj.static variable
+
+Static Method:
+
+    class Person:   
+        @staticmethod  
+        def Age (age):  
+            if (age <= 18): # check whether the Person is eligible to vote or not.  
+                print ("The person is not eligible to vote.")  
+            else:  
+                print ("The person is eligible to vote.")  
+  
+    Person.Age(17)  
+
+    Python has a static method that belongs to the class. It is just like a static variable that bounds to the class rather than the class's object. 
+
+    A static method can be called without creating an object for the class. It means we can directly call the static method with the reference of the class name.
+    
+    Furthermore, a static method is constrained with a class; hence it cannot change the state of an object.
+
+LAMBDA:
+    In Python, a lambda function is a single-line function declared with no name, which can have any number of arguments, but it can only have one expression. Such a function is capable of behaving similarly to a regular function declared using the Python's def keyword
+
+GENERATOR:
+    A Generator is an elegant way to create custom iterators in Python that makes it really easy to work with iterators.
+
+    Python provides a generator to create your own iterator function. A generator is a special type of function which does not return a single value, instead, it returns an iterator object with a sequence of values. In a generator function, a yield statement is used rather than a return statement.
+
+    Generators are a special class of functions that simplify the task of writing iterators. A generator is a function that produces a sequence of results instead of a single value, i.e you generate ​a series of values.
+
+    Generator-Function : A generator-function is defined like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return. If the body of a def contains yield, the function automatically becomes a generator function.
+PEP: 
+    PEP stands for Python Enhancement Proposal. A PEP is a design document providing information to the Python community, or describing a new feature for Python or its processes or environment. The PEP should provide a concise technical specification of the feature and a rationale for the feature.13-Jun-2000
+    
+ITERABLES:
+	anytining that can be looped over in python 
+		eg : list, tuple,dict,sets
+	or:
+		interator in python is simpley an object that can can return data one ata time while ierating over it
+
+        REQ METHODS:
+            iter()
+            next()
+    
+        eg:  nums=[1,2,3]
+        value=nums.__iter__() #iter(nums)
+
+        print(value.__next__()) #1   next(value)
+        print(value.__next__()) #2
+        print(value.__next__()) #3
+
+
+		check dir(obj)  # obj can be a list tuple or dict
+            we can see __iter__ method available 
+
+	
+
+DECORATOR:
+	decorator is a function that take in another function as a parameter add some functionality to it and then returns the original function
+	A decorator acts as a wrapper to other functions.
+	 
+ORM:
+
+    An object-relational mapper (ORM) is a code library that automates the transfer of data stored in relational database tables into objects that are more commonly used in application code.
+
+    One of the most powerful features of Django is its Object-Relational Mapper (ORM), which enables you to interact with your database, like you would with SQL. In fact, Django's ORM is just a pythonical way to create SQL to query and manipulate your database and get results in a pythonic fashion.
+
+    Django lets us interact with its database models, i.e. add, delete, modify and query objects, using a database-abstraction API called ORM(Object Relational Mapper)
+
+DATA STRUCTURES:
+
+    Data structures are code structures for storing and organizing data that make it easier to modify,
+    navigate, and access information. Data structures determine how data is collected, 
+    the functionality we can implement, and the relationships between data.
+
+        List:
+
+            Array-like structures that let you save a set of mutable 
+            objects of the   same type to a variable.
+
+        Tuple:
+
+            Tuples are immutable lists, meaning the elements cannot be changed. 
+            It’s declared with parenthesis instead of square brackets.
+
+        Set: 
+
+            Sets are unordered collections, meaning that elements are unindexed 
+            and have no set sequence. They’re declared with curly braces.
+
+    Dictionary (dict):
+
+        Similar to hashmap or hash tables in other languages, a dictionary 
+        is a collection of key/value pairs. You initialize an empty 
+        dictionary with empty curly braces and fill it with colon separated 
+        keys and values. All keys are unique, immutable objects.
+
+    User-Defined Data Structures
+
+        Arrays vs. Lists
+            Arrays and lists are the same structure with one difference.
+            Lists allow heterogeneous data element storage whereas Arrays 
+            allow only homogenous elements to be stored within them.
+
+        Stack
+            Stacks are linear Data Structures which are based on the principle of Last-In-First-Out (LIFO) where data which
+            is entered last will be the first to get accessed. It is built using the array structure and has operations namely,
+            pushing (adding) elements, popping (deleting) elements and accessing elements only from
+            one point in the stack called as the TOP.
+
+        Queue
+            A queue is also a linear data structure which is based on the principle of First-In-First-Out (FIFO)
+            where the data entered first will be accessed first. It is built using the array structure and has operations
+            which can be performed from both ends of the Queue, that is, head-tail or front-back.
+
+        Tree
+            Trees are non-linear Data Structures which have root and nodes. The root is the node from where the
+            data originates and the nodes are the other data points that are available to us. The node that precedes
+            is the parent and the node after is called the child.
+
+        Linked List
+            Linked lists are linear Data Structures which are not stored consequently but are linked with
+            each other using pointers. The node of a linked list is composed of data and a pointer called next.
+
+ABSTRACT CLASSES:
+
+    In Python, abstract base classes provide a blueprint for concrete classes.
+    They don’t contain implementation. Instead, they provide an interface and make sure that derived concrete classes are properly implemented.
+
+    Abstract base classes cannot be instantiated. Instead, they are inherited and extended by the concrete subclasses.
+
+    Subclasses derived from a specific abstract base class must implement the methods and properties provided in that abstract base class. Otherwise, an error is raised during the object instantiation.
+
+ERP 
+    A tool fo managing information.
+    information management is the organised collection, storage and use
+    of information for the benefit of an enterprise
+
+        CRM
+            CRM is an acronym that stands for customer relationship management. Customer relationship 
+            management is any tool, strategy, or process that helps businesses better organize 
+            and access customer data. ... Managing your business's relationships with customers 
+            became a complicated process.
+
+        ORDER MANAGEMENT 
+            or an inventry management
+        
+        ACCOUNTING SYSTEM
+
+        SPREADSHEETS
+            these dont talsk or shere data wit each other 
+            island of information   
+            
+
+            ERP centrelizes all these
+            streamline flow of information
+            business proces   becomes connctded
+
+            provide better service.
+            effective team.
+            Analize data
+            make reports
+
+VIRTUAL ENV:
+            a virtual environment provides you a development environment independent of the host operating system.
+            You can install and use necessary software in the /bin folder of the virtualenv, instead of using
+            the software installed in the host machine.
+
+SQL COMMANDS:
+            SQL joins are used to combine records from two or more than two tables in a database system.
+            A join refers to combining the fields from two or more than two tables by using a value that
+            is common to each of the tables which helps in reducing the repeated columns and data stored
+            in columns of the same table.
+
+            a) Inner JOIN: Inner JOIN is also known as a simple JOIN. This SQL query returns results
+            from both the tables having a common value in rows.
+
+            SQL Query:
+
+            SELECT * from employee, employee_info WHERE employee.EmpID = employee_info.EmpID ;
+            Result:
+
+            Inner Join Example
+
+            b) Natural JOIN: This is a type of Inner JOIN that returns results from both the tables having
+            the same data values in the columns of both the tables to be joined.
+
+            SQL Query:
+
+            SELECT * from employee NATURAL JOIN employee_info;
+            Result:
+
+            Natural JOIN
+
+            c) Cross JOIN: Cross JOIN returns the result as all the records where each row from the first
+            table is combined with each row of the second table.
+
+            SQL Query:
+
+            SELECT * from employee CROSS JOIN employee_info;
+            Result:
+
+            Let us do some modification in the above tables to understand Right JOIN, Left JOIN, and Full JOIN.
+
+            employee table:
+
+            employee table new
+
+            employee_info table:
+
+            employee_info table new
+
+            a) Right JOIN: Right JOIN is also known as Right Outer JOIN. This returns all the rows
+            as a result from the right table even if the JOIN condition does not match any records in the left table.
+
+            SQL Query:
+
+            SELECT * from employee RIGHT OUTER JOIN employee_info on (employee.EmpID = employee_info.EmpID);
+            Result:
+
+            Right Join Example
+
+            b) Left JOIN: Left JOIN is also known as Left Outer JOIN. This returns all the rows as a result of the
+            left table even if the JOIN condition does not match any records in the right table. This is exactly the opposite of Right JOIN.
+
+            SQL Query:
+
+            SELECT * from employee LEFT OUTER JOIN employee_info on (employee.EmpID = employee_info.EmpID);
+            Result:
+
+            Left JOIN
+
+            c) Outer/Full JOIN: Full JOIN return results in combining the result of both the Left JOIN and Right JOIN.
+
+            SQL Query:
+
+            SELECT * from employee FULL OUTER JOIN employee_info on (employee.EmpID = employee_info.EmpID);
+    
+EXCEPTION HANDLING:
+
+
+        Exception handling ensures that the flow of the program doesn't break when an exception occurs
+        during the execution of a program.
+
+        These exceptions can be handled using the try,expect and finally..
+
+        try is used to test  the code block. if there is any error in that then the expect block
+        get excuted and finally will get excuted reagardeless of the reslt of try or except block.
+
+DJANGO WORKS
+        Django is a Python-based free and open-source web framework 
+        that follows the model–template–views architectural pattern. 
+
+        Django is a high-level Python web framework that enables rapid development
+        of secure and maintainable websites. 
+         
+        Django takes care of much of the hassle of web development,
+        so you can focus on writing your app without needing to reinvent the wheel. It is free and open source, has a thriving and active community, great documentation, and many options for free and paid-for support.
+
+        How does Django handle a request?
+        Whenever a request comes into Django, it is handled by middlewares. When the Django server starts, the first thing it loads after settings.py is middlewares. The Request is processed by various middlewares one at a time. So, from the above list, when the request comes it will be passed through the security middleware.

@@ -31,7 +31,7 @@ INTRO:
 MIDDLEWARES:
 	
       What is the purpose of Middlewares in Django?
-Middleware is used to perform a function in the application. The functions can be a security, session, csrf protection, authentication etc. Django provides various built-in middleware and also allows us to write our own 
+    Middleware is used to perform a function in the application. The functions can be a security, session, csrf protection, authentication etc. Django provides various built-in middleware and also allows us to write our own 
 
 STATIC: (CLASS VARIABLE(static) AND INSTANCE VARIABLE)
     

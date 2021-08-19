@@ -1,11 +1,4 @@
-﻿AUDVIKLABS:
-
-    AudvikLabs is a boutique development firm whose vision 
-    is creating secure and intelligent applications and platforms.
-    We leverage the latest technologies, such as Machine Learning,
-    to tackle the most challenging DevOps, Cloud Implementation 
-    (AWS, Azure, Google Cloud) and application development projects.
-
+﻿
 INTRO:
         I am Rinson Peter,I am from Fortkochin,
         I am a BCA graduate passed out 2014.
@@ -41,7 +34,7 @@ STATIC: (CLASS VARIABLE(static) AND INSTANCE VARIABLE)
     or
     obj.static variable
 
-Static Method:
+    Static Method:
 
     class Person:   
         @staticmethod  
@@ -74,9 +67,9 @@ PEP:
     PEP stands for Python Enhancement Proposal. A PEP is a design document providing information to the Python community, or describing a new feature for Python or its processes or environment. The PEP should provide a concise technical specification of the feature and a rationale for the feature.13-Jun-2000
     
 ITERABLES:
-	anytining that can be looped over in python 
+	    anytining that can be looped over in python 
 		eg : list, tuple,dict,sets
-	or:
+	    or:
 		interator in python is simpley an object that can can return data one ata time while ierating over it
 
         REQ METHODS:
@@ -97,10 +90,11 @@ ITERABLES:
 	
 
 DECORATOR:
-	decorator is a function that take in another function as a parameter add some functionality to it and then returns the original function
+	decorator is a function that takes in another function as a parameter add some functionality to it and then returns the original function
 	A decorator acts as a wrapper to other functions.
 	 
 ORM:
+    Django ORM provides an elegant and powerful way to interact with the database in an Object-Oriented fashion. ORM is a library that automatically transfers data stored in databases into objects commonly used in application code.
 
     An object-relational mapper (ORM) is a code library that automates the transfer of data stored in relational database tables into objects that are more commonly used in application code.
 
@@ -114,20 +108,134 @@ DATA STRUCTURES:
     navigate, and access information. Data structures determine how data is collected, 
     the functionality we can implement, and the relationships between data.
 
+    CHECK AVAILABLE OPTIONS: print(dir.objectname)   #object=list , tuple dict etc
+
+        String:
+            Note: All string methods returns new values. They do not change the original string.
+
+            Method	Description
+            capitalize()	Converts the first character to upper case
+            casefold()	Converts string into lower case
+            center()	Returns a centered string
+            count()	Returns the number of times a specified value occurs in a string
+            encode()	Returns an encoded version of the string
+            endswith()	Returns true if the string ends with the specified value
+            expandtabs()	Sets the tab size of the string
+            find()	Searches the string for a specified value and returns the position of where it was found
+            format()	Formats specified values in a string
+            format_map()	Formats specified values in a string
+            index()	Searches the string for a specified value and returns the position of where it was found
+            isalnum()	Returns True if all characters in the string are alphanumeric
+            isalpha()	Returns True if all characters in the string are in the alphabet
+            isascii()	Returns True if all characters in the string are ascii characters
+            isdecimal()	Returns True if all characters in the string are decimals
+            isdigit()	Returns True if all characters in the string are digits
+            isidentifier()	Returns True if the string is an identifier
+            islower()	Returns True if all characters in the string are lower case
+            isnumeric()	Returns True if all characters in the string are numeric
+            isprintable()	Returns True if all characters in the string are printable
+            isspace()	Returns True if all characters in the string are whitespaces
+            istitle()	Returns True if the string follows the rules of a title
+            isupper()	Returns True if all characters in the string are upper case
+            join()	Joins the elements of an iterable to the end of the string
+            ljust()	Returns a left justified version of the string
+            lower()	Converts a string into lower case
+            lstrip()	Returns a left trim version of the string
+            maketrans()	Returns a translation table to be used in translations
+            partition()	Returns a tuple where the string is parted into three parts
+            replace()	Returns a string where a specified value is replaced with a specified value
+            rfind()	Searches the string for a specified value and returns the last position of where it was found
+            rindex()	Searches the string for a specified value and returns the last position of where it was found
+            rjust()	Returns a right justified version of the string
+            rpartition()	Returns a tuple where the string is parted into three parts
+            rsplit()	Splits the string at the specified separator, and returns a list
+            rstrip()	Returns a right trim version of the string
+            split()	Splits the string at the specified separator, and returns a list
+            splitlines()	Splits the string at line breaks and returns a list
+            startswith()	Returns true if the string starts with the specified value
+            strip()	Returns a trimmed version of the string
+            swapcase()	Swaps cases, lower case becomes upper case and vice versa
+            title()	Converts the first character of each word to upper case
+            translate()	Returns a translated string
+            upper()	Converts a string into upper case
+            zfill()	Fills the string with a specified number of 0 values at the beginning
+            Note: All string methods returns new values. They do not change the original string.
+
         List:
 
             Array-like structures that let you save a set of mutable 
             objects of the   same type to a variable.
+
+            OPERATIONS:
+
+                APPEND:
+                        lst_name.append(element)        #  element gets appeneded at the ends
+                INSERT:
+                        lst_name.insert(index,value)    #  value is inserted at the index position
+                CLEAR:
+                        lst_name.clear()                #  removes every element, returs empty list
+                POP:
+                        lst_name.pop(index)             # remove index element,returns popped val or last value bydeault
+                DEL:
+                        del lst_name[index]             #      same   ,returns None
+                REMOVE:
+                        lst_name.remove(element)        # remove element   
+                COUNT:
+                        lst_name.count(element)         #   returns the number of times the specified
+                                                             element appears in the list.                      
+                REVERSE:
+                        lst_name.reverse()
+                SORT:
+                        lst_name.sort(key= ,reverse=)           updates list
+                SORTED:
+                        newlist=sorted(lst_name,key= ,reverse=)         returns new sorted list,        
+                COPY:
+                        newlist=lst_name.copy()                     #  returns a shallow copy of the list.
+                EXTEND:
+                        my_list.extend(iterable)             #  adds all the elements of an iterable 
+                                                            (list, tuple, string etc.) to the end of the list.            
 
         Tuple:
 
             Tuples are immutable lists, meaning the elements cannot be changed. 
             It’s declared with parenthesis instead of square brackets.
 
+            OPERATIONS:
+
+                    COUNT:
+                            my_tuple.count(element)   # returns no of elements in my_tuple
+                    INDEX:
+                            tuple.index(element, start, end)
+
+                            Tuple index() parameters
+                            The tuple index() method can take a maximum of three arguments:
+
+                            element - the element to be searched
+                            start (optional) - start searching from this index
+                            end (optional) - search the element up to this index        
         Set: 
 
             Sets are unordered collections, meaning that elements are unindexed 
             and have no set sequence. They’re declared with curly braces.
+
+            Method	Description
+            add()	Adds an element to the set
+            clear()	Removes all the elements from the set
+            copy()	Returns a copy of the set
+            difference()	Returns a set containing the difference between two or more sets
+            difference_update()	Removes the items in this set that are also included in another, specified set
+            discard()	Remove the specified item
+            intersection()	Returns a set, that is the intersection of two or more sets
+            intersection_update()	Removes the items in this set that are not present in other, specified set(s)
+            isdisjoint()	Returns whether two sets have a intersection or not
+            issubset()	Returns whether another set contains this set or not
+            issuperset()	Returns whether this set contains another set or not
+            pop()	Removes an element from the set
+            remove()	Removes the specified element
+            symmetric_difference()	Returns a set with the symmetric differences of two sets
+            symmetric_difference_update()	inserts the symmetric differences from this set and another
+            union()	Return a set containing the union of sets
+            update()	Update the set with another set, or any other iterable
 
     Dictionary (dict):
 
@@ -135,6 +243,20 @@ DATA STRUCTURES:
         is a collection of key/value pairs. You initialize an empty 
         dictionary with empty curly braces and fill it with colon separated 
         keys and values. All keys are unique, immutable objects.
+
+        Method	Description
+        clear()	Removes all the elements from the dictionary
+        copy()	Returns a copy of the dictionary
+        fromkeys()	Returns a dictionary with the specified keys and value
+        get()	Returns the value of the specified key
+        items()	Returns a list containing a tuple for each key value pair
+        keys()	Returns a list containing the dictionary's keys
+        pop()	Removes the element with the specified key
+        popitem()	Removes the last inserted key-value pair
+        setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+        update()	Updates the dictionary with the specified key-value pairs
+        values()	Returns a list of all the values in the dictionary
+
 
     User-Defined Data Structures
 
@@ -298,5 +420,29 @@ DJANGO WORKS
         Django takes care of much of the hassle of web development,
         so you can focus on writing your app without needing to reinvent the wheel. It is free and open source, has a thriving and active community, great documentation, and many options for free and paid-for support.
 
+        
+
+
+
+MVT DJANGO:
+
+    The MVT (Model View Template) is a software design pattern. It is a collection of three important components Model View and Template. The Model helps to handle database. It is a data access layer which handles the data.
+
+    The Template is a presentation layer which handles User Interface part completely. The View is used to execute the business logic and interact with a model to carry data and renders a template.
+
+    Although Django follows MVC pattern but maintains it?s own conventions. So, control is handled by the framework itself.
+
+    There is no separate controller and complete application is based on Model View and Template. That?s why it is called MVT application.
+
         How does Django handle a request?
         Whenever a request comes into Django, it is handled by middlewares. When the Django server starts, the first thing it loads after settings.py is middlewares. The Request is processed by various middlewares one at a time. So, from the above list, when the request comes it will be passed through the security middleware.
+
+            Here, a user requests for a resource to the Django, Django works as a controller and check to the available resource in URL.
+
+            If URL maps, a view is called that interact with model and template, it renders a template.
+
+            Django responds back to the user and sends a template as a response.
+
+
+JAVASCRIPT:
+    

@@ -46,14 +46,8 @@ def deletion_order2(data_list,priority):
             data=data_list[j]['last_updated'].split('-')
             for k in range(len(data)):
                 if data[2] > int(year):
-                    
-
-
-
-
-
+                                                   
     print(data)        
-
 
 priority = "last_updated"
 deletion_order2(data_list,priority)

@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Simple gulp example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sathiya",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-cache": "latest",
+    "gulp-concat": "latest",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-util": "latest",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "mozjpeg": "^7.0.0",
+    "optipng-bin": "^7.0.0",
+    "pngquant-bin": "^6.0.0"
+  }
+}

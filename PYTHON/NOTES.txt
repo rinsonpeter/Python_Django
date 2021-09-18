@@ -245,6 +245,7 @@ DATA STRUCTURES:
         keys and values. All keys are unique, immutable objects.
 
         Method	Description
+
         clear()	Removes all the elements from the dictionary
         copy()	Returns a copy of the dictionary
         fromkeys()	Returns a dictionary with the specified keys and value
@@ -265,7 +266,7 @@ DATA STRUCTURES:
             Lists allow heterogeneous data element storage whereas Arrays 
             allow only homogenous elements to be stored within them.
 
-        Stack
+        Stack:
             Stacks are linear Data Structures which are based on the principle of Last-In-First-Out (LIFO) where data which
             is entered last will be the first to get accessed. It is built using the array structure and has operations namely,
             pushing (adding) elements, popping (deleting) elements and accessing elements only from
@@ -445,4 +446,425 @@ MVT DJANGO:
 
 
 JAVASCRIPT:
-    
+
+    // x = 6; I will not be executed      comments
+
+    var: 
+        function scoped or globally scoped
+        can be reassigned(can b overridden)
+        can be accesed before assignment
+    Let: 
+        block scoped
+        cannot be redeclared
+        cannot be called before assignment
+    const:
+        does not aloww reassignment(BUT can change  properties)
+
+        eg:
+            const constVar={name:"bob"}
+            const.name="sally"
+
+JAVASCRIPT STATEMENTS:
+        <script>
+            var x, y, z;  // Declare 3 variables
+            x = 5;    // Assign the value 5 to x
+            y = 6;    // Assign the value 6 to y
+            z = x + y;  // Assign the sum of x and y to z
+
+            document.getElementById("demo").innerHTML =
+            "The value of z is " + z + ".";
+        </script>
+
+
+    ARRAY:
+        check if element exist:
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.includes("Mango")   // Returns true
+            
+
+
+JAVASCRIPT OPERATORS:
+            <script>
+                let x=(5 + 6) * 100000;
+                document.getElementById("demo").innerHTML = x
+            </script> 
+            <script>
+                var x;
+                x = 5;
+                document.getElementById("demo").innerHTML = x * 10;
+                </script>   
+
+            
+
+JQUERY VS JAVASCRIPT:
+        Return the element with id="id01":
+            myElement = $("#id01");              #id
+            myElement = document.getElementById("id01");
+
+            myElements = $("p");                  <tag>
+            myElements = document.getElementsByTagName("p");
+
+            myElements = $(".intro");               .class
+            myElements = document.getElementsByClassName("intro");
+
+
+        Return a list of all <p> elements with class="intro".
+            myElements = $("p.intro");
+            myElements = document.querySelectorAll("p.intro");
+
+            <script>
+                $(document).ready(function() {
+                var myElements = $("p.intro");
+                $("#demo").text("The first paragraph with class='intro' is: " + myElements[0].innerHTML);
+                });
+            </script>
+
+        Set the inner text of an HTML element:
+            myElement.text("Hello Sweden!");
+            myElement.textContent = "Hello Sweden!";
+
+            <script>
+                $(document).ready(function() {
+                var myElement = $("#01");
+                myElement.text("Hello Sweden!");
+                });
+            </script>
+
+        Get the inner text of an HTML element:
+            myText = $("#02").text();
+            myText = document.getElementById("02").textContent;
+
+            <script>
+                $(document).ready(function() {
+                var myText = $("#02").text();
+                $("#demo").text(myText); 
+                });
+            </script>
+
+        Set the HTML content of an element:
+            myElement.html("<p>Hello World</p>");
+            myElement.innerHTML = "<p>Hello World</p>";
+
+            <script>
+                $(document).ready(function() {
+                $("#02").html("<p>Hello World!</p>");
+                });
+            </script>
+
+        Get the HTML content of an element:
+            content = myElement.html();
+            content = myElement.innerHTML;
+
+            <script>
+                $(document).ready(function() {
+                var content = $("#02").html();
+                $("#01").html(content);
+                });
+            </script>    
+
+
+
+JQUERY DOCUMENT.READY()
+                <script>
+                    $(document).ready(function() {
+                    $("#02").hide();
+                    });
+                </script>
+JQUERY CSS:
+        Hide an HTML Element:
+
+            myElement.hide();
+            myElement.style.display = "none";
+
+
+
+        Show an HTML Element:
+            myElement.show();
+            myElement.style.display = "";
+
+        Change the font size of an HTML element:
+            $("#demo").css("font-size","35px");
+            document.getElementById("demo").style.fontSize = "35px";
+
+        Remove an HTML element:
+            $("#id02").remove();
+            document.getElementById("id02").remove();
+
+                <script>
+                    $(document).ready(function() {
+                    $("#id02").remove();
+                    });
+                    </script>
+
+        Return the parent of an HTML element:
+            <script>
+                $(document).ready(function() {
+                $("#demo").text($("#02").parent().prop("nodeName")); 
+                });
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    employee workin in project:
+
+    an employye works in multiple projects
+    a project has got many employeess
+
+
+    requirement analysis
+    feasibility study
+    cost-benefit analysiss
+    SRS: sftwr req specification
+    UML Diagram:
+    Data flow diagrams:
+
+    UI design
+    Data 
+    architecture
+
+    development
+TESTING
+    unit testing  (Developer does this)
+    Intergration testing
+    UAT :user acceptance TESTING
+    deployment
+TOOLTIP CSS:
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('[tool-tip-toggle="tooltip-demo"]').tooltip({
+                        placement : 'bottom'
+                    });
+                });
+        </script>
+
+TOOLTIP HTML :
+    <div class="container">
+ 
+    <div class="row">
+ 
+    <h2>Font awesome with tooltips</h2>
+ 
+        <div class="col-md-6">
+ 
+ 
+ 
+            <a href="#"><span class="fa fa-spinner fa-spin fa-4x" tool-tip-toggle="tooltip-demo" data-original-title="Font awesome spin"></span></a>
+ 
+            <a href="#"><span class="fa fa-camera-retro fa-4x" tool-tip-toggle="tooltip-demo" data-original-title="Camera icon"></span></a>
+ 
+            <span class="fa fa-bar-chart fa-3x" tool-tip-toggle="tooltip-demo" data-original-title="A bar chart"></span>
+ 
+            <a href="#"><span class="fa fa-barcode fa-5x" tool-tip-toggle="tooltip-demo" data-original-title="Bar code icon"></span></a>
+ 
+            <a href="#"><span class="fa fa-calendar fa-3x" tool-tip-toggle="tooltip-demo" data-original-title="The Calendar"></span></a>
+ 
+            <span class="fa fa-code fa-2x" tool-tip-toggle="tooltip-demo" data-original-title="Code"></span>
+ 
+        </div>
+ 
+ 
+ 
+    </div>
+ 
+    </div>
+ 
+ 
+ 
+    </div>
+
+AGILE Model:
+
+MYSQL:
+    Username: root
+    Pasword : rinson@123
+
+    COMMANDS:
+        BASICS:
+            SELECT VERSION();               //returns current version
+            show databases;                 //returns all available databases
+            CREATE DATABASE databaseName;
+            USE databaseName;
+            show tables;            or   
+            SHOW FULL TABLES;       or
+            SHOW TABLES FROM database_name;
+            CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),
+                        species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+            DESCRIBE pet;
+            INSERT INTO pet
+                        VALUES ('Puffball','Diane','hamster','f','1999-03-30',NULL);   
+        ALTER:
+
+            ALTER TABLE Employee
+                    ADD Name varchar(50);  
+            ALTER TABLE Employee 
+                    MODIFY Name varchar(30) not null;
+            ALTER TABLE Employee 
+                    DROP COLUMN Name;
+            ALTER TABLE Employee
+                    CHANGE COLUMN phone_number phone varchar(10) not null
+            ALTER TABLE teachers 
+                    RENAME EDUCATORS  
+            alter table projects 
+                    rename column budjet to budget;                                    
+         
+        WHERE:
+            SELECT what_to_select
+                        FROM which_table
+                        WHERE conditions_to_satisfy;
+
+            SELECT 
+                lastname, 
+                firstname, 
+                jobtitle,
+                officeCode
+            FROM
+                employees
+            WHERE
+                jobtitle = 'Sales Rep' AND 
+                officeCode = 1
+                order by firstname;        
+            SELECT 
+                lastName, 
+                firstName, 
+                jobTitle, 
+                officeCode
+            FROM
+                employees
+            WHERE
+                jobtitle = 'Sales Rep' OR 
+                officeCode = 1
+            ORDER BY 
+                officeCode , 
+                firstname;
+
+            SELECT 
+                firstName, 
+                lastName
+            FROM
+                employees
+            WHERE
+                lastName LIKE '%son'
+            ORDER BY firstName;            
+
+            SELECT 
+                lastname, 
+                firstname, 
+                jobtitle
+            FROM
+                employees
+            WHERE
+                jobtitle <> 'Sales Rep';
+
+
+             SELECT 
+                firstName, 
+                lastName, 
+                officeCode
+            FROM
+                employees
+            WHERE
+                officeCode BETWEEN 1 AND 3
+            ORDER BY officeCode;  
+
+            SELECT 
+                firstName, 
+                lastName, 
+                officeCode
+            FROM
+                employees
+            WHERE
+                officeCode IN (1 , 2, 3)
+            ORDER BY 
+                officeCode; 
+            SELECT 
+                officeCode, 
+                city, 
+                phone, 
+                country
+            FROM
+                offices
+            WHERE
+                country IN ('USA' , 'France');    
+
+            SELECT 
+                lastName, 
+                firstName, 
+                reportsTo
+            FROM
+                employees
+            WHERE
+                reportsTo IS NULL;   
+	    CHECK:
+		job varchar(20) check (job in ('analyst','manager','clerk')),
+
+	FORIEGN KEY:
+		foreign key (emp_no) references employees (emp_no) 
+		on delete cascade on update cascade,	       
+
+	COMPOSITE KEY:
+		emp_no int not null,  
+		
+		pro_no int not null,        
+		primary key( emp_no, pro_no)
+        
+       create table works_on
+				(
+				emp_no int not null,
+				pro_no int,   
+				job varchar(20) check (job in ('analyst','manager','clerk')),
+				date datetime,
+				foreign key (emp_no) references employees (emp_no) on delete cascade on update cascade,
+				foreign key (pro_no) references projects (pro_no) on delete cascade on update cascade,
+				primary key( emp_no, pro_no)
+				);   
+        Operator	Description
+                =	Equal to. You can use it with almost any data type.
+         <> or !=	Not equal to
+                <	Less than. You typically use it with numeric and date/time data types.
+                >	Greater than.
+                <=	Less than or equal to
+                >=	Greater than or equal to
+
+
+
+
+
+
+        LIMIT:
+            Select * from Employee LIMIT 0,5    
+                        from 0 to how many records
+        DISTINCT:
+            select DISTINCT emp_anme from employee 
+                    (avoid douplicate records)
+            select DISTINCT emp_anme from employee 
+                    (avoid douplicate records)
+        COUNT:            
+            select count(ep_name) from employess
+
+
+NODE JS:
+    SYNCRONOUS:
+        var fs = require("fs");  
+        var data = fs.readFileSync('input.txt');  
+        console.log(data.toString());  
+        console.log("Program Ended");
+    ASYNCROUNOUS:
+        var fs = require("fs");  
+  
+        fs.readFile('input.txt', function (err, data) {  
+            if (err) return console.error(err);  
+            console.log(data.toString());  
+        });  
+        console.log("Program Ended");  
+        
+          

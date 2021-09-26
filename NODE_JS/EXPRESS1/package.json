@@ -1,0 +1,20 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "withoutexpress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "init",
+    "express"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mocha": "^9.1.1"
+  }
+}

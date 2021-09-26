@@ -31,6 +31,7 @@ class bank(person):
         self.bal += amount
         print("Amount deposited:", amount, "\nBalance amount:", self.bal)
 
+
 obj = bank(1001, "Manu,", 30000)
 n = 1
 while (n == 1):

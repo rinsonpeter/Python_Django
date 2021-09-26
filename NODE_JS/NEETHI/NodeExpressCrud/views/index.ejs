@@ -1,0 +1,24 @@
+<html>
+    <head>
+        
+        <title><%=(locals.title) ? title :''%></title>
+    
+    </head>
+    <body>
+    <% title %> 
+    <%= title %> 
+
+    <% if (title) { %>
+            <h1>if is working with ejs templating</h1>
+
+            <% for( let index = 0; index < 10; index++ ) { %>
+                        <h6> <%= index %>  </h6>
+                        <% } %>
+    <% } %>
+
+
+
+        <h2>Hello world   hello<h2>
+    </body>
+
+</html>

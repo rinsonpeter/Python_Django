@@ -54,18 +54,18 @@ td i {
 }
 
 i:hover{
-    color: darkcyan;
+    color: rgb(218, 116, 21);
     cursor: pointer;
 }
 li{
     cursor: pointer;
 }
 .nav-item:hover{
-    color: darkcyan;
+    color: rgb(196, 138, 52);
     cursor: pointer;
 }
 ul:hover{
-    color: darkcyan;
+    color: rgb(194, 115, 26);
     cursor: pointer;
 }
 
@@ -78,12 +78,17 @@ ul:hover{
   width: 90%;
 }
 
-div#fixedfooter {
+#fixedfooter {
+  background-color:rgb(26, 51, 31);
   position: fixed;
   bottom: 0px;
   left: 0px;
   width: 100%;
   color: rgb(232, 233, 232);
-  font-size: 12px;
+  font-size: 14px;
   padding: 8px;
+}
+
+#fa{
+  margin-right: 20px;
 }

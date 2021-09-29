@@ -1070,4 +1070,27 @@ function getEmployees(req, res, next) {
 
 
 
+if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('pages/error', {
+      message: err.message,
+      error: err
+    });
+  });
+}
 
+<%- include ../partials/header.ejs %>
+
+
+
+app.use()  //middleware
+
+
+ <select  class="form-select" id="cliente" name="cliente" value="<%= datos%>" tabindex="1" required>
+<% for(var i=0; i < datos.length; i++) { %>
+  <option 
+      <%= datos[i].datos %>
+  </option>
+<%}%>
+</select>

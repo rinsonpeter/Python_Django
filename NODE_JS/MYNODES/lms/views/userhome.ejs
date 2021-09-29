@@ -1,0 +1,143 @@
+<%- include partials/header.ejs %>
+<link rel="stylesheet" href='/stylesheets/userhome.css'>
+<script src='/javascripts/userhome.js'></script>
+
+<div class="main">
+    <div class="side-bar">
+
+        <div class="imgcontainer" align="center">
+                <img src="images/img.png" class="photo" align="center">
+
+                 <h3 class="m-b-0" name><%=profile[0].name%></h3>
+               <p><%=profile[0].designation%></p> 
+           
+
+                  </div>
+
+               <div  class="info1">
+
+               
+           <p><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>AST-<%=profile[0].emp_id%></p>
+           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><%=profile[0].location%></p>
+           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><%=profile[0].username%></p>
+           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><%=profile[0].phone%></p>
+
+            </div>
+     </div>
+      
+      <div class="details">
+        
+          <h3>Select Leavetype</h3>
+
+
+        <select id="ddlleave" onchange="GetSelectedTextValue(this)">
+            
+        <option value="totalAnnual">Annual Leave</option>
+        <option value="totalCasual">Casual Leave</option>
+        <option value="totalSick">Sick Leave</option>
+        <option value="totalEarned">Earned leave</option>
+        <option value="totalLop">Loss Of Pay</option>
+              </select>
+             
+                  
+                
+        
+                   
+              
+       
+              <div class="tbls">
+                
+              <table class="tbl1">
+            <tr><th id="heading"></th></tr>
+                <tr>
+               <td>Total Leaves</td>
+              <td>:</td> 
+              <td></td>
+              </tr> 
+
+
+                <tr>
+               <td >Availed Leaves</td>
+              <td>:</td> 
+              <td id="availed"></td>
+              </tr>
+
+              <tr>
+             <td >Pending Leaves</td>
+             <td>:</td> 
+              <td id="pending"></td>
+              </tr>
+
+
+              <tr>
+             <td>Balance Leaves</td>
+             <td>:</td> 
+              <td id="balance"></td>
+              </tr>
+
+
+
+               <tr>
+              
+               <td colspan="3" align="center"> <button onclick="location.href = '/leaverequests';" id="myButton" class="float-left submit-button" >Request For Leave</button>
+</td>
+              </tr>
+
+               </table>  
+
+
+
+        <table border="4" class="tbl2">
+                     <thead>
+                         <tr>
+                         <td style="background: #dbeade;" colspan="7" align="center"><h4>Leave Application Status</h4></td>
+                     </tr>
+                     <tr align="center">
+                         <th>Apply Date</th>
+                     <th>Leave type</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Days</th>
+                    <th>Reason</th>
+                    <th>Status</th>
+                    
+                         </tr>
+                     </thead>
+<tbody align="center">
+
+
+<% if(data.length){ 
+                                  
+    for(var i = 0;i < data.length;i++) { %>
+    
+   <tr>
+       <td><%=data[i].apply_date%></td>
+       <td><%=data[i].leavetype%></td>
+       <td><%=data[i].from_date%></td>
+       <td><%=data[i].to_date%></td>
+       <td><%=data[i].days%></td>
+       <td><%=data[i].reason%></td>
+       <td><%=data[i].status%></td>
+      
+   </tr>
+   <% }
+   
+   }else{ %>
+       <tr>
+           <td colspan="7">No requests</td>
+       </tr>
+   <% } %>
+
+</tbody>
+     </table>
+ </div>
+
+      </div>
+
+      
+</div>
+
+
+
+<%- include partials/footer.ejs %>
+    

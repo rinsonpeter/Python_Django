@@ -1,0 +1,59 @@
+<%- include  ../partials/header %>
+
+<div class="page-data"><br> <br><br>
+
+    <form method="post" action="/employees/edit/<%=data[0].emp_no%>" onsubmit="" >
+        <table cellpadding="11">
+
+            <tr>
+                <td class="label">Employee Name</td>
+                <td> <input class="form-control" type="text" name="name" value="<%=data[0].emp_name%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Job</td>
+                <td> <input class="form-control"  type="text" name="job" value="<%=data[0].job%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Manager</td>
+                <td> <input type="text" name="mgr" class="form-control"  value="<%=data[0].mgr%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Hire Date</td>
+                <td> <input type="text" name="hire_date" class="form-control"  value="<%=data[0].hire_date%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Department:</td>
+                <td><% if(data2) { %>
+                    
+                      <select class="form-select" name="deptno">
+                        <option value="<%=data[0].dept_no%>" selected><%=data[0].dept_name%></option>
+                          <% for (const i in data2) { %>  
+                          <option  value="<%= data2[i].dept_no %>"> <%= data2[i].dept_name %> </option>
+                          <% } %>
+                      </select>
+
+                <% } %>
+            </td>                
+            </tr>
+            <tr>
+                <td class="label">Salary</td>
+                <td> <input type="text" value="<%=data[0].sal%>" name="sal" class="form-control"  required></td>
+            </tr>
+            <tr>
+                <td class="label">Comments</td>
+                <td> <input type="text" name="comm" value="<%=data[0].comm%>" class="form-control"  required></td>
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <input class='btn btn-primary' type="submit" name="submit" class="form-control"  value="Save">
+                    <a href="/employees"><button class='btn btn-primary'>Cancel</button></a>
+                    
+  
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<%- include  ../partials/footer %>

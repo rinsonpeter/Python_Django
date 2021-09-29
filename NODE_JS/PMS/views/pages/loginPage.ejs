@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <br /><br /><br />
+        <h1>Login</h1>
+        <br />
+        <form
+          name="myForm"
+          action="/"
+          method="post"
+          onsubmit="">
+          <input
+            type="text"
+            class="form-control"
+            id="userName"
+            name="username"
+            placeholder="userName"
+          /><br />
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Password"
+          /><br />
+
+          <a style="margin-right: 50px" href="">Forgot Password</a>
+          <a href=" ">New User? Register Here</a>
+          <br /><br />
+          <input type="submit" class="btn btn-primary" value="LogIn" />
+        </form>
+      </div>
+      <div class="col-4"></div>
+    </div>
+
+<% include ../partials/footer %> 

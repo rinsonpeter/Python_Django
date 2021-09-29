@@ -1,0 +1,47 @@
+<%- include  ../partials/header %>
+
+<div class="page-data"><br> <br><br>
+
+    <form method="post" action="">
+        <table cellpadding="11">
+
+            <tr>
+                <td class="label">Employee Name</td>
+                <td>:  <%=data[0].emp_name%>  </td>
+            </tr>
+            <tr>
+                <td class="label">Job</td>
+                <td>: <%=data[0].job%> </td>
+            </tr>
+            <tr>
+                <td class="label">Manager</td>
+                <td>: <%=data[0].mgr%> </td>
+            </tr>
+            <tr>
+                <td class="label">Hire Date</td>
+                <td>: <%=data[0].hire_date%> </td>
+            </tr>
+            <tr>
+                <td class="label">Department No</td>
+                <td>: <%=data[0].dept_no%></td>                
+            </tr>
+            <tr>
+                <td class="label">Salary</td>
+                <td>: <%=data[0].sal%>" </td>
+            </tr>
+            <tr>
+                <td class="label">Comments</td>
+                <td>: <%=data[0].comm%> </td>
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <a href="/employees/edit"><button class='btn btn-primary'>Edit</button></a>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<%- include F:\python\Python\Luminar\Python_Django\NODE_JS\PMS\views\partials\footer.ejs %>

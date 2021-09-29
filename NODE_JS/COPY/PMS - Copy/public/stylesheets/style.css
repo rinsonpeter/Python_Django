@@ -1,0 +1,90 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.boxy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card {
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+td a {
+  margin-right: 0px;
+}
+
+table.tab td a {
+  background-color: yellow;
+}
+
+.footeritems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.footer {
+  height: 45px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(58, 65, 57);
+  color: white;
+  text-align: center;
+}
+
+.footeritems p {
+  font-size: 12px;
+}
+
+td i {
+  margin-right: 20px;
+}
+
+i:hover{
+    color: darkcyan;
+    cursor: pointer;
+}
+li{
+    cursor: pointer;
+}
+.nav-item:hover{
+    color: darkcyan;
+    cursor: pointer;
+}
+ul:hover{
+    color: darkcyan;
+    cursor: pointer;
+}
+
+#empPrjts{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+#myEmployee{
+  width: 90%;
+}
+
+#fixedfooter {
+  background-color:rgb(26, 51, 31);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: rgb(232, 233, 232);
+  font-size: 14px;
+  padding: 8px;
+}

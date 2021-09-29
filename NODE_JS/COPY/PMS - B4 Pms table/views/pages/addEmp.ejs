@@ -1,0 +1,39 @@
+<%- include F:\python\Python\Luminar\Python_Django\NODE_JS\PMS\views\partials\header.ejs %>
+
+
+<!------------------CONTENT---------------->
+
+<div class="container">
+  <br /><br /><br />
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <form name="myForm" action="\employees\add" method="post" >
+        <label> Employee Id:</label>
+        <input type="text" name="id" id="id" required class="form-control" />
+        <label>Employee Name:</label>
+        <input type="text" name="name" required id="name" class="form-control" />
+        <label> Job:</label>
+        <input type="text" required name="job" id="job" class="form-control" />
+        <label>Manager:</label>
+        <input type="text" name="mgr" id="mgr" required class="form-control" />
+        <label>Hire Date:</label>
+        <input type="text" name="hrdte" id="hrdte" required class="form-control" />
+        <label>Department No:</label>
+        <input type="text" name="dptno" id="dptno" required class="form-control" />
+        <label>Salary:</label>
+        <input type="text" name="sal" id="sal" required class="form-control" />
+        <label>Comments:</label>
+        <input type="text" name="comments" id="comments" required class="form-control" />
+        <br /><br />
+        <input type="submit" class="btn btn-primary" value="Submit" style="margin-left:40%;
+              text-align: center;" required />
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+
+<%- include F:\python\Python\Luminar\Python_Django\NODE_JS\PMS\views\partials\footer.ejs %>

@@ -1,0 +1,116 @@
+
+
+<%- include partials/header1.ejs %>
+<h1 style="margin-left: 420px; margin-bottom: 15px;">Pending Leave Applications</h1>
+<table class="table table-striped" style= "width: 80%;
+margin-left: auto;
+margin-right: auto;">
+  <thead align="center" >
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Department</th>
+      <th scope="col">Apply Date</th>
+      <th scope="col">Leavetype</th>
+      <th scope="col">From</th>
+      <th scope="col">To</th>
+      <th scope="col">Days</th>
+      <th scope="col">Reason</th>
+      <th scope="col" colspan="2" >Action</th>
+    </tr>
+  </thead>
+  
+     <tbody align="center" >
+                            <tr>
+    
+                                <% if(data.length){ 
+                                  
+                                    for(var i = 0;i < data.length;i++) { %>
+        
+        
+        
+        
+                                <tr>
+        
+                                    <td><%=data[i].emp_id%>  </td>
+        
+                                    <td><%=data[i].name%></td>
+                                    
+                                    <td><%=data[i].department%></td>
+        
+                                    <td><%=data[i].apply_date%></td>
+                    
+                                    <td><%=data[i].leavetype%></td>
+                                    
+                                    <td><%=data[i].from_date%></td>
+                                        
+                                    
+                                    <td><%=data[i].to_date%></td>
+                                        
+                                
+                                    <td><%=data[i].days%></td>
+                                        
+                                    
+                                    <td><%=data[i].reason%></td>
+                                
+                                    <td> <a class="btn btn-success btn-sm" href="/pendingrequests/approverequest/<%=data[i].req_id%>" role="button">Approve</a></td>
+                                    
+                                   <!-- <td> <a class="btn btn-danger btn-sm" href="/pendingrequests/rejectrequest/<%=data[i].req_id%>" role="button">Reject</a></td>-->
+                                   <td>
+                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        reject
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                              <form method="POST" action="/pendingrequests/rejectrequest/<%=data[i].req_id%>">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLabel">Comments</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <div class="mb-3">
+                                                  
+                                                  <textarea name="comments" class="form-control" id="message-text" rows="4"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button type="submit" class="btn btn-danger">Reject</button>
+                                            </div>
+                                        </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+
+
+
+
+                                   </td>
+                                </tr>
+                                <% }
+           
+                            }else{ %>
+                                <tr>
+                                    <td colspan="10"> No requests </td> 
+                                </tr>
+                            <% } %>
+                            
+                            
+                            
+   
+<%- include partials/footer.ejs %>                   
+
+
+
+
+
+     
+  </tbody>
+</table>
+
+

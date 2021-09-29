@@ -1,0 +1,270 @@
+<%- include partials/header1.ejs %>
+
+<link rel="stylesheet" href='/stylesheets/userhome1.css'>
+<div class="container-fluid text-center">    
+  <div class="row content" ">
+    <div class="col-sm-2 sidenav">
+      
+      <div class="panel">
+          <div class="user-heading round">
+              <a href="#">
+                  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="photo">
+              </a>
+
+              <h3><p><%=profile[0].name%></p></h3>
+              <p><%=profile[0].designation%></p>
+          </div>
+
+          <ul class="list-group">
+            
+              <li class="list-group-item"><span><i class="bi bi-person-circle"></i></span> AST-<%=profile[0].emp_id%></li>
+              <li class="list-group-item"><span> <i class="bi bi-house-fill"></i></span> <%=profile[0].location%></li>
+              <li class="list-group-item"><span> <i class="bi bi-envelope-fill"></i></span> <%=profile[0].username%></li>
+              <li class="list-group-item"><span><i class="bi bi-telephone-fill"></i></span> <%=profile[0].phone%></li>
+          </ul>
+      </div>
+      
+    </div>
+    <div class="col-sm-10 text-left"> 
+      
+        <div style="width: fit-content; margin-top: 10px;">
+          
+        <div style="width: fit-content;">
+          
+      <h6>Select Leavetype</h6>
+      <select id="ddlleave" name="ddlleave" onchange="GetSelectedTextValue(this)">
+            
+            
+            <option value="totalCasual">Casual Leave</option>
+            <option value="totalSick">Sick Leave</option>
+            <option value="totalEarned">Earned leave</option>
+            <option value="totalLop">Loss Of Pay</option>
+                  </select>
+                </div> 
+                
+         <div class="tbls">
+      <table class="table table-borderless" style="width: 203px; text-align: left;">
+  
+                  <tr>
+                  
+                   <th colspan="3" > <h3 style="text-align: center;" id="heading"></h3></th>
+                  </tr>
+
+
+
+                  <tr>
+                  <td>Total Leaves</td>
+                  <td>:</td> 
+                  <td id="total">0</td>
+                  </tr> 
+
+
+                    <tr>
+                   <td>Availed Leaves</td>
+                  <td>:</td> 
+                  <td id="availed">0 </td>
+                  </tr>
+
+                  <tr>
+                 <td>Pending Leaves</td>
+                 <td>:</td> 
+                  <td id="pending">0 </td>
+                  </tr>
+
+
+                  <tr>
+                 <td>Balance Leaves</td>
+                 <td>:</td> 
+                  <td id="balance" >0</td>
+                  </tr>
+
+
+
+                   <tr align="center">
+                  
+                   <td colspan="3"> <button onclick="location.href = '/leaverequests';" id="myButton" class="btn btn-info float-left submit-button" >Apply For Leave</button>
+                   </td>
+                  </tr>
+
+</table>
+
+
+ <table class="table table-hover " >
+  <thead >
+      <tr>
+                          <td style="background: #dbeade;" colspan="7" align="center"><h4>My Leave Histroy</h4></td>
+                         </tr>
+    <tr>
+      <th scope="col">Apply Date</th>
+      <th scope="col">Leave type</th>
+      <th scope="col">From</th>
+      <th scope="col">To</th>
+      <th scope="col">Days</th>
+      <th scope="col">Reason</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>                        
+<tbody id="myTable" align="center">
+    <% if(data.length){ 
+
+      
+                                  
+        for(var i = 0;i < data.length;i++) { %>
+        
+       <tr>
+           <td><%=data[i].apply_date%></td>
+           <td><%=data[i].leavetype%></td>
+           <td><%=data[i].from_date%></td>
+           <td><%=data[i].to_date%></td>
+           <td><%=data[i].days%></td>
+           <td><%=data[i].reason%></td>
+           <% if(data[i].status == 'Pending') {    %>
+          
+							
+            <td><button type="button" id="but" class="btn btn-warning btn-sm"><%= data[i].status%></button></td>
+      
+                <% } else if(data[i].status == 'Approved'){  %>						
+                    
+                  <td><button type="button" id="but" class="btn btn-success btn-sm"><%= data[i].status%></button></td>
+                  <% } else{  %>
+                  <td><button type="button" id="but" class="btn btn-danger btn-sm" ><%= data[i].status%></button></td>
+                
+              
+              
+                            <% } %>
+          
+       </tr>
+       <% }
+       
+       }else{ %>
+           <tr>
+               <td colspan="7">No requests</td>
+           </tr>
+       <% } %>
+    
+</tbody>
+</table>
+</div>
+          
+    </div>
+     </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+//var data1="<%= data %>"
+
+var test = '<%- JSON.stringify(data) %>';
+  window.onload(GetSelectedTextValue(ddlleave));
+    
+      
+    function GetSelectedTextValue(ddlleave) {
+        var selectedText = ddlleave.options[ddlleave.selectedIndex].innerHTML;   //to get selected text and value from dropdown
+        var selectedValue = ddlleave.value;
+        document.getElementById("heading").innerHTML = selectedText ;
+
+       
+      
+        var casualPending=0;
+      var sickPending=0;
+                                          var earnedPending=0;
+                                          var lopPending=0 ;
+
+
+                                          var casualAvailed=0;
+                                          var sickAvailed=0;
+                                          var earnedAvailed=0;
+                                          var lopAvailed=0
+
+        for (var j = 0; j < data.length; j++)   //accessing object from array
+
+
+
+{          //count of pending leaves
+
+
+if(data[j].status=="Pending" && data[j].leavetype=="Casual Leave")  casualPending += 1;     //count of pending casualleave
+
+if(data[j].status=="Pending" && data[j].leavetype=="Sick Leave")  sickPending += 1; //count of pending sickleave 
+
+if(data[j].status=="Pending" && data[j].leavetype=="Earned leave")  earnedPending += 1;
+
+if(data[j].status=="Pending" && data[j].leavetype=="Loss Of Pay")  lopPending += 1;
+             
+
+
+
+
+          //count of availed leaves leaves
+
+
+if(data[j].status=="Approved" && data[j].leavetype=="Casual Leave")  casualAvailed += 1;     //count of availed casualleave
+
+if(data[j].status=="Approved" && data[j].leavetype=="Sick Leave")  sickAvailed += 1; //count of availed sickleave 
+
+if(data[j].status=="Approved" && data[j].leavetype=="Earned leave")  earnedAvailed += 1;
+
+if(data[j].status=="Approved" && data[j].leavetype=="Loss Of Pay")  lopAvailed += 1;
+             
+
+}
+
+
+
+
+                          var totalCasual= 20;  //getting values from local storage
+                          var totalSick=10;
+                          var totalEarned=5;
+                          var totalLop=6;
+
+          var casualBalance=totalCasual-(casualPending+casualAvailed);        //calculating balance leave  (need to add availed leaves)
+           var sickBalance=totalSick-(sickPending+sickAvailed);
+           var earnedBalance=totalEarned-(earnedPending+earnedAvailed);
+            var lopBalace=totalLop-(lopPending+lopAvailed);
+                
+
+
+
+
+
+
+
+
+if(selectedValue=="totalCasual") {
+  document.getElementById("total").innerHTML =totalCasual;
+document.getElementById("pending").innerHTML =casualPending;
+document.getElementById("balance").innerHTML = casualBalance
+document.getElementById("availed").innerHTML = casualAvailed
+}
+
+
+if(selectedValue=="totalSick") {
+  document.getElementById("total").innerHTML =totalSick;
+document.getElementById("pending").innerHTML =sickPending;
+document.getElementById("balance").innerHTML =sickBalance;
+document.getElementById("availed").innerHTML =sicklAvailed;
+}
+
+
+if(selectedValue=="totalEarned"){
+  document.getElementById("total").innerHTML =totalEarned
+document.getElementById("pending").innerHTML =earnedPending;
+document.getElementById("balance").innerHTML =earnedBalance;
+document.getElementById("availed").innerHTML =earnedAvailed;
+}
+
+
+if(selectedValue=="totalLop"){
+  document.getElementById("total").innerHTML =totalLop
+document.getElementById("pending").innerHTML =lopPending;
+document.getElementById("balance").innerHTML =lopBalace;
+document.getElementById("availed").innerHTML =lopAvailed;
+}
+
+    }
+    </script>
+
+<%- include partials/footer.ejs %>

@@ -8,10 +8,7 @@ var flash = require('express-flash');
 var session = require('express-session');
 var connection  = require('express-myconnection'); 
 
-
 var mysql = require('mysql');
-
-
 
 var empRouter = require('./routes/employees');
 var usersRouter = require('./routes/users');
@@ -20,19 +17,13 @@ var app = express();
 
 app.use(
   connection(mysql,{
-  
   host: 'localhost',
   user: 'root',
   password : 'rinson@123',
   port : 3306, //port mysql
-  database:'mycompany'
-
-},'pool') //or single
-
+  database:'pms'
+  },'pool') //or single
 );
-
-app.use('/employees', empRouter);
-app.use('/users', usersRouter);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -44,19 +35,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({ 
-    cookie: { maxAge: 60000 },
-    store: new session.MemoryStore,
-    saveUninitialized: true,
-    resave: 'true',
-    secret: 'secret'
-}))
+app.use(session({
+  secret: 'Auniquerandomtext',
+  saveUninitialized: true,
+  resave: true
+}));
 
-app.use(flash());
-
-
-
-
+app.use('/employees', empRouter);
+app.use('/', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -71,7 +57,8 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('pages/error',{message: err.message,
+    error: err});
 });
 
 module.exports = app;

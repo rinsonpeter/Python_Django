@@ -1,0 +1,49 @@
+<%- include  ../partials/header %>
+
+<div class="page-data"><br> <br><br>
+
+    <form method="post" action="/employees/edit/<%=data[0].emp_no%>">
+        <table cellpadding="11">
+
+            <tr>
+                <td class="label">Employee Name</td>
+                <td>: <input type="text" name="name" value="<%=data[0].emp_name%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Job</td>
+                <td>: <input type="text" name="job" value="<%=data[0].job%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Manager</td>
+                <td>: <input type="text" name="mgr" value="<%=data[0].mgr%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Hire Date</td>
+                <td>: <input type="text" name="hire_date" value="<%=data[0].hire_date%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Department No</td>
+                <td>: <input type="text" name="dept_no" value="<%=data[0].dept_no%>" required></td>                
+            </tr>
+            <tr>
+                <td class="label">Salary</td>
+                <td>: <input type="text" value="<%=data[0].sal%>" name="sal" required></td>
+            </tr>
+            <tr>
+                <td class="label">Comments</td>
+                <td>: <input type="text" name="comm" value="<%=data[0].comm%>" required></td>
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <input class='btn btn-primary' type="submit" name="submit" value="Save">
+                    <a href="/employees"><button class='btn btn-primary'>Cancel</button></a>
+                    
+  
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<%- include  ../partials/footer %>

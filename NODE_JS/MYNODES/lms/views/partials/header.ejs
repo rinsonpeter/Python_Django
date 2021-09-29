@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+	
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href='/stylesheets/headerstyle.css'>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+
+
+
+</head>
+<body>
+
+<header>
+    <img class="logo" src="/images/lms.jpg">
+
+     <a href="/logout"><i class="fa fa-sign-out fa_custom fa-2x"></i></a> 
+
+
+
+  <ul>
+      <li><a class="active" href="/users">Home</a></li>
+      <li id="hide_allrequest"><a href="/leaverequestList">All Requests</a></li>
+      <li id="hide_pending"><a href="/pendingrequests">Pending Requests</a></li>
+      <li><a href="#">About</a></li>
+      
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+</header>
+
+
+<% var userType =type %>
+<script>
+     var userType = "<%= userType  %>";
+
+     if(userType == "normal" || userType == "repofficer") 
+
+      document.getElementById("hide_allrequest").style.display = "none";
+
+
+      if(userType == "normal" || userType == "hr") 
+
+      document.getElementById("hide_pending").style.display = "none";
+     
+</script>

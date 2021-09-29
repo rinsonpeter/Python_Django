@@ -1,13 +1,15 @@
-<!doctype html>
+
+<%- include  ../partials/header %>
+<!-- <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>employees</title>
+    <title>PMS</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-<body class="container" style="margin-top: 50px;">
-
+<body class="container" style="margin-top: 50px;"> -->
+<br><br><br>
     <div class="card"> 
         <div class="card-header">
             <ul class="nav nav-pills w-100">
@@ -44,9 +46,18 @@
                     <td><%= data[i].mgr%></td>
 
                     <td>
-                    <a class="btn btn-success edit" href="../edit/<%=data[i].emp_no%>">Info</a>
-                    <a class="btn btn-primary edit" href="../edit/<%=data[i].emp_no%>">Edit<a>                       
-                        <a class="btn btn-danger delete" onclick="return alert('Are You sure?')" href="../delete/<%=data[i].emp_no%>">Delete</a>                       
+                    <a  href="/employees/info/<%=data[i].emp_no%>"><i class="fa fa-info-circle" 
+                        aria-hidden="true"
+                        title="More Info"
+                        style="font-size:30px;"></i></a>
+                    <a  href="/employees/edit/<%=data[i].emp_no%>"><i class="fa fa-pencil-square" 
+                        aria-hidden="true"
+                        title="Edit Employee?"
+                        style="font-size:30px;"></i><a>                       
+                        <a  onclick="return confirm('Are You sure?')" href="/employees/delete/<%=data[i].emp_no%>"><i class="fa fa-trash"
+                            title="Delete Employee?" 
+                            style="font-size:30px;" 
+                            aria-hidden="true"></i></a>                       
                     </td>
                 </tr>
             <% } %>
@@ -62,6 +73,8 @@
 
         </div>
     </div>
-
+<!-- 
 </body>
-</html>
+</html> -->
+
+<%- include  ../partials/footer %>

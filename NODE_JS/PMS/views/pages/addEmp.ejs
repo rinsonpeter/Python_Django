@@ -8,24 +8,31 @@
   <div class="row">
     <div class="col-3"></div>
     <div class="col-6">
-      <form name="myForm" action="employee.html" method="get" onsubmit="return addEmp()">
-        <label> Employee Id:</label>
-        <input type="text" name="id" id="id" required class="form-control" />
-        <label>Employee Name:</label>
-        <input type="text" name="name" required id="eName" class="form-control" />
-        <label> Job:</label>
-        <input type="text" required name="phone" id="phone" class="form-control" />
+      <form name="myForm" action="\employees\add" method="post">
 
+        <label>Employee Name:</label>
+        <input type="text" name="name" required id="name" class="form-control" />
+        <label> Job:</label>
+        <input type="text" required name="job" id="job" class="form-control" />
         <label>Manager:</label>
-        <input type="text" name="department" id="department" required class="form-control" />
+        <input type="text" name="mgr" id="mgr" required class="form-control" />
         <label>Hire Date:</label>
-        <input type="text" name="id" id="prID" required class="form-control" />
-        <label>Department No:</label>
-        <input type="text" name="id" id="prID" required class="form-control" />
+        <input type="text" name="hrdte" id="hrdte" required class="form-control" />
+        
+        <% if(data2) { %>
+          <label>Department:</label>
+            <select class="form-select" name="deptno">
+                <% for (const i in data2) { %>
+                <option  value="<%= data2[i].dept_no %>"> <%= data2[i].dept_name %> </option>
+                <% } %>
+            </select><br>
+      <% } %>
+        
+        
         <label>Salary:</label>
-        <input type="text" name="id" id="prID" required class="form-control" />
+        <input type="text" name="sal" id="sal" required class="form-control" />
         <label>Comments:</label>
-        <input type="text" name="id" id="prID" required class="form-control" />
+        <input type="text" name="comments" id="comments" required class="form-control" />
         <br /><br />
         <input type="submit" class="btn btn-primary" value="Submit" style="margin-left:40%;
               text-align: center;" required />

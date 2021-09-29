@@ -1,3 +1,17 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+
+
+<a class="navbar-brand" href="/"><i class="fa fa-fw fa-home"></i>RinzCorp</a>
+
+<% if (message) { %>
+    <h1><%= message %></h1>
+<% } %>
+
+<% if (error.status) { %>
+    <h2><%= error.status %></h2> 
+<% } %>
+
+<% if (error.stack) { %>
+    <pre><%= error.stack %></pre> 
+<% } %>
+
+

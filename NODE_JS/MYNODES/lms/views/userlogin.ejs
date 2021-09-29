@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Form</title>
+<link rel="stylesheet" href='/stylesheets/headerstyle.css'>
+ <link rel="stylesheet" href='/stylesheets/footerstyle.css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+body{
+	background-image: url("/images/background.png");
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+.login-form {
+    width: 340px;
+    margin: 130px auto;
+  	font-size: 15px;
+
+  
+}
+
+.login-form form {
+
+    margin-bottom: 15px;
+    background:  #c3d8fb;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+
+}
+.login-form h2 {
+    margin: 0 0 15px;
+    color: #341ede;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {
+     
+    background: rgb(117, 118, 218);;    
+    font-size: 15px;
+    color: #f8f9fa;
+        font-weight: bolder;
+    font-weight: bold;
+    width: 100px;
+}
+</style>
+</head>
+<body>
+ 
+
+<div class="login-form">
+    <form action="/" method="post" name="Form" onSubmit="return(validate());" >
+        <h2 class="text-center">Log in</h2>       
+        <div class="form-group">
+            <input type="text" name="username" id="username" class="form-control" placeholder="Username" >
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group" align="center">
+            <button type="submit" class="btn btn-primary btn-block" >Login</button>
+        </div>
+             
+    </form>
+    
+</div>
+
+<%- include partials/footer.ejs %>
+
+<script type="text/javascript">
+
+//validation part.....................................
+
+	 function validate() {
+
+	 	 var username = document.forms["Form"]["username"].value;
+         var password = document.forms["Form"]["password"].value;
+         var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+
+      
+         if( username == "" ) {
+            alert( "Please provide your username!" );
+            document.Form.username.focus() ;
+            return false;
+         }
+
+         
+          if (!filter.test(username)) {
+          alert('Please provide a valid username');
+           document.Form.username.focus() ;
+           return false;
+            }
+
+         if( password == "" ) {
+            alert( "Please provide your password!" );
+            document.Form.password.focus() ;
+            return false;
+         }
+
+
+         
+
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

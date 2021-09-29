@@ -1,0 +1,71 @@
+
+   <%- include partials/header1.ejs %>
+   <link rel="stylesheet" href='/stylesheets/leaverequests.css'>
+   <script src='/javascripts/leaverequests.js'></script>
+
+   <h2>LEAVE REQUEST</h2>
+	<form action="/leaverequests" method="post" name="myForm" onSubmit="return(validate());">
+
+<table class="table table-borderless">
+
+  
+
+<tr>
+<td>Leave-Type</td>
+<td>:</td>
+<td><select id="ddlleave" name="ddlleave" onchange="GetSelectedTextValue(this)" >
+             <option value="">----Select----</option>   
+        
+            <option value="Casual Leave">Casual Leave</option>
+            <option value="Sick Leave">Sick Leave</option>
+            <option value="Earned leave">Earned leave</option>
+            <option value="Loss Of Pay">Loss Of Pay</option>
+                  </select></td>
+</tr>
+
+<tr>
+<td>From</td>
+<td>:</td>
+<td><input type="date" name="From" id="From" class="text" min=todayDate></td>
+</tr>
+<tr>
+<td> To</td>
+<td>        :      </td>
+<td>
+    <input type="date" name="To" id="To" class="text"  min=todatDate></td>
+</tr>
+
+
+<tr>
+<td>Reason</td>
+<td>:</td>
+<td>
+<textarea id="Reason" name="Reason">
+  
+  </textarea>
+</td>
+</tr>
+
+<tr>
+<td>File</td>
+<td>:</td>
+<td><input type="File" name="File" id="File" class="text"></td>
+
+</tr>
+
+<tr>
+<td colspan="3" style="text-align: center;">
+<button type="submit" id="myButton" class="btn btn-info float-left submit-button btn-lg" >Submit</button></td>
+</tr>
+</table>
+</form>
+
+
+<%- include partials/footer.ejs %>
+
+ 
+
+
+
+
+

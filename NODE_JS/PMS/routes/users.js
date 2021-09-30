@@ -4,7 +4,7 @@ var session = require("express-session");
 
 function getLoginPage(req, res, next) {
   req.session.destroy();
-  res.render("pages/loginPage");
+  res.render("pages/loginPage",{errorMessage:""});
 }
 
 var loginValidate = function (req, res, next) {
@@ -20,10 +20,11 @@ var loginValidate = function (req, res, next) {
         [inpUsername, inpPassword],
         function (err, results) {
           if (err || results.length == 0) {
-            console.log("INCCORECT SQL");
             console.log(err);
             res.render("pages/error", {
-              message: "Incorrect Username and/or Password!" });
+              message: "Incorrect Username and/or Password!" ,
+              error:{status:"db mismatch",stack:"invalid credentials"}});
+              
           } else {
             console.log("insied good connection login successfull");
             var dbUsername = results[0].username;

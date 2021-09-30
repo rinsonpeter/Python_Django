@@ -7,11 +7,11 @@ var logger = require('morgan');
 var flash = require('express-flash');
 var session = require('express-session');
 var connection  = require('express-myconnection'); 
-
 var mysql = require('mysql');
 
 var empRouter = require('./routes/employees');
 var usersRouter = require('./routes/users');
+var projectsRouter= require('./routes/projects');
 
 var app = express();
 
@@ -43,6 +43,8 @@ app.use(session({
 
 app.use('/employees', empRouter);
 app.use('/', usersRouter);
+app.use('/projects', projectsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

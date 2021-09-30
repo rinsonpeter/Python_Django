@@ -5,6 +5,11 @@
       <div class="col-4"></div>
       <div class="col-4">
         <br /><br /><br />
+
+        <% if (errorMessage) { %>
+          <p style="color: red;"><%= errorMessage %></p>
+      <% } %>
+
         <h1>Login</h1>
         <br />
         <form

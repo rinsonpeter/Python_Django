@@ -109,7 +109,8 @@ function infoEmp(req, res, next) {
 }
 
 function getAllEmp(req, res, next) {
-  console.log(req.session.username, req.session.usertype);
+  if (req.session.usertype){
+    console.log(req.session.username, req.session.usertype);
 
   req.getConnection(function (err, connection) {
     var query = connection.query(
@@ -127,6 +128,12 @@ function getAllEmp(req, res, next) {
       }
     );
   });
+  }
+  else{
+    res.render("pages/loginPage",{errorMessage:"Please login to continue.."})
+  }
+
+  
 }
 
 function addEmp(req, res, next) {

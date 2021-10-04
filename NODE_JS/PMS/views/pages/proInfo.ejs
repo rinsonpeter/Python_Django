@@ -1,0 +1,40 @@
+<%- include  ../partials/header %>
+
+<div class="page-data"><br> <br><br>
+
+    <form method="post" action="">
+        <table cellpadding="11">
+
+            <tr>
+                <td class="label">Project Name</td>
+                <td>:  <%=data[0].pro_name%>  </td>
+            </tr>
+            <tr>
+                <td class="label">Project Id</td>
+                <td>: <%=data[0].pro_no%> </td>
+            </tr>
+            <tr>
+                <td class="label">start Date</td>
+                <td>: <%=data[0].start_date%> </td>
+            </tr>
+            <tr>
+                <td class="label">Duration</td>
+                <td>: <%=data[0].duration%> </td>
+            </tr>
+            <tr>
+                <td class="label">Budget</td>
+                <td>: <%= data[0].budget %></td>                
+            </tr>
+            
+            
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <a class="btn btn-primary edit" href="/employees/edit/<%=data[0].pro_no%>">Edit<a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<%- include F:\python\Python\Luminar\Python_Django\NODE_JS\PMS\views\partials\footer.ejs %>

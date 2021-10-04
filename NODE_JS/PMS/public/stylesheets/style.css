@@ -3,9 +3,6 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
-}
 .boxy {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +47,7 @@ table.tab td a {
 }
 
 td i {
+  color: blueviolet;
   margin-right: 20px;
 }
 
@@ -91,4 +89,10 @@ ul:hover{
 
 #fa{
   margin-right: 20px;
+}
+
+
+.fa-info-circle{
+  color: blueviolet !important;
+  background-color: brown !important;
 }

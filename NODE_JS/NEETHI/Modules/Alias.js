@@ -7,10 +7,10 @@ var first = function () {
 var second = function () {
     console.log('b called');
 };
-module.exports = {
-    first: a,
-    second: b
-};
+// module.exports = {
+//     first: a,
+//     second: b
+// };
 //Can be done like this=================================================
 module.exports.a = function () {
     console.log('a called');

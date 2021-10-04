@@ -913,14 +913,9 @@ NODE JS:
 
             moment library
 
-
-    COMMANDS:
-        
+    COMMANDS:        
         SET DEBUG=helloworld:* & npm start   # Run helloworld on Windows with Command Prompt
-
-        
         SET DEBUG=helloworld:* | npm start   # Run helloworld on Windows with PowerShell   
-
         # Run helloworld on Linux/macOS
         DEBUG=helloworld:* npm start
 
@@ -1094,3 +1089,58 @@ app.use()  //middleware
   </option>
 <%}%>
 </select>
+
+TYPESCRIPT:
+    STtring METHODS:
+        String methods
+            Method	Description
+            charAt()	Returns the character at the given index
+            concat()	Returns a combination of the two or more specified strings
+            indexOf()	Returns an index of first occurrence of the specified substring from a string (-1 if not found)
+            replace()	Replaces the matched substring with a new substring
+            split()	Splits the string into substrings and returns an array
+            toUpperCase()	Converts all the characters of the string into upper case
+            toLowerCase()	Converts all the characters of the string into lower case
+            charCodeAt()	Returns a number that is the UTF-16 code unit value at the given index
+            codePointAt()	Returns a nonnegative integer Number that is the code point value of the UTF-16 encoded code point starting at the specified index
+            includes()	Checks whether a string includes another string
+            endsWith()	Checks whether a string ends with another string
+            LastIndexOf()	Returns the index of last occurrence of value in the string
+            localeCompare()	Checks whether a string comes before, after or is the same as the given string
+            match()	Matches a regular expression against the given string
+            normalize()	Returns the Unicode Normalization Form of the given string.
+            padEnd()	Pads the end of the current string with the given string
+            padStart()	Pads the beginning of the current string with given string
+            repeat()	Returns a string consisting of the elements of the object repeated in the given times.
+            search()	Searches for a match between a regular expression and a string
+            slice()	Returns a section of a string
+            startsWith()	Checks whether a string starts with another string
+            substr()	Returns a string beginning at the specified location and of the given characters
+            substring()	Returns a string between the two given indexes
+            toLocaleLowerCase()	Returns a lower case string while respecting current locale
+            toLocaleUpperCase()	Returns an upper case string while respecting current locale
+            trim()	Trims the white space from beginning and end of string
+            trimLeft()	Trims the white space from left side of the string
+            trimRight()	Trims the white space from right side of the string
+
+    ARRAY METHODS:
+            Array Methods
+                The following table lists all Array methods which can be used for different purposes.
+
+                Method	Description
+                pop()	Removes the last element of the array and return that element
+                push()	Adds new elements to the array and returns the new array length
+                sort()	Sorts all the elements of the array
+                concat()	Joins two arrays and returns the combined result
+                indexOf()	Returns the index of the first match of a value in the array (-1 if not found)
+                copyWithin()	Copies a sequence of elements within the array
+                fill()	Fills the array with a static value from the provided start index to the end index
+                shift()	Removes and returns the first element of the array
+                splice()	Adds or removes elements from the array
+                unshift()	Adds one or more elements to the beginning of the array
+                includes()	Checks whether the array contains a certain element
+                join()	Joins all elements of the array into a string
+                lastIndexOf()	Returns the last index of an element in the array
+                slice()	Extracts a section of the array and returns the new array
+                toString()	Returns a string representation of the array
+                toLocaleString()	Returns a localized string representing the array        

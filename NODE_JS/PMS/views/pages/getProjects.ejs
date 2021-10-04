@@ -17,7 +17,7 @@
                     <a class="nav-link"><h3>Project List</h3></a>
                 </li>
                 <li class="nav-pill ml-auto">
-                    <a class="nav-link active" href="/employees/add">Add Employee</a>
+                    <a class="nav-link active" href="/projects/add">Add Projects</a>
                 </li>
             </ul>
         </div>
@@ -29,7 +29,7 @@
                 <tr>
                     <th scope="col">Project No</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Start Date </th>
+                    <!-- <th scope="col">Start Date </th> -->
                     <th scope="col">Duration</th>
                     <th scope="col">Budget</th>
                     <th >Actions</th>
@@ -43,21 +43,21 @@
                     <!-- <th scope="row"><%= (i+1) %></th> -->
                     <td><%= data[i].pro_no%></td>
                     <td><%= data[i].pro_name%></td>
-                    <td><%= data[i].start_date%></td>
+                    <!-- <td><%= data[i].start_date%></td> -->
                     <td><%= data[i].duration%></td>
                     <td><%= data[i].budget%></td>
 
 
                     <td>
-                    <a  href="/employees/info/<%=data[i].pro_no%>"><i class="fa fa-info-circle" 
+                    <a  href="/projects/info/<%=data[i].pro_no%>"><i class="fa fa-info-circle" 
                         aria-hidden="true"
                         title="More Info"
                         style="font-size:30px;"></i></a>
-                    <a  href="/employees/edit/<%=data[i].pro_no%>"><i class="fa fa-pencil-square" 
+                    <a  href="/projects/edit/<%=data[i].pro_no%>"><i class="fa fa-pencil-square" 
                         aria-hidden="true"
                         title="Edit?"
                         style="font-size:30px;"></i><a>                       
-                        <a  onclick="return confirm('Are You sure?')" href="/employees/delete/<%=data[i].pro_no%>"><i class="fa fa-trash"
+                        <a  onclick="return confirm('Are You sure?')" href="/projects/delete/<%=data[i].pro_no%>"><i class="fa fa-trash"
                             title="Delete?" 
                             style="font-size:30px;" 
                             aria-hidden="true"></i></a>                       

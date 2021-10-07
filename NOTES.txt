@@ -464,7 +464,7 @@ JAVASCRIPT:
             const constVar={name:"bob"}
             const.name="sally"
 
-JAVASCRIPT STATEMENTS:
+    JAVASCRIPT STATEMENTS:
         <script>
             var x, y, z;  // Declare 3 variables
             x = 5;    // Assign the value 5 to x
@@ -492,7 +492,7 @@ JAVASCRIPT STATEMENTS:
             
 
 
-JAVASCRIPT OPERATORS:
+    JAVASCRIPT OPERATORS:
             <script>
                 let x=(5 + 6) * 100000;
                 document.getElementById("demo").innerHTML = x
@@ -573,13 +573,13 @@ JQUERY VS JAVASCRIPT:
 
 
 
-JQUERY DOCUMENT.READY()
+    JQUERY DOCUMENT.READY()
                 <script>
                     $(document).ready(function() {
                     $("#02").hide();
                     });
                 </script>
-JQUERY CSS:
+    JQUERY CSS:
         Hide an HTML Element:
 
             myElement.hide();
@@ -642,12 +642,12 @@ JQUERY CSS:
     architecture
 
     development
-TESTING
+    TESTING
     unit testing  (Developer does this)
     Intergration testing
     UAT :user acceptance TESTING
     deployment
-TOOLTIP CSS:
+    TOOLTIP CSS:
             <script type="text/javascript">
                 $(document).ready(function(){
                     $('[tool-tip-toggle="tooltip-demo"]').tooltip({
@@ -656,7 +656,7 @@ TOOLTIP CSS:
                 });
         </script>
 
-TOOLTIP HTML :
+    TOOLTIP HTML :
     <div class="container">
  
     <div class="row">
@@ -995,100 +995,100 @@ NODE JS:
     <% } %> 
 
 
-    
-localhost:4000/employees -list all emps
-localhost:4000/employees/add - add emp
-/employees/add - post - insert
+        
+    localhost:4000/employees -list all emps
+    localhost:4000/employees/add - add emp
+    /employees/add - post - insert
 
 
-router.get('/', usersList);
-router.get('/registration', addUser);
-router.post('/registration', saveNewUser);
-router.get('/edit/:id', editUserInfo);
-router.post('/edit/:id',saveUserInfo);
-router.get('/getDelete/:id', confirmDeleteUser);
-router.get('/delete/:id', deleteUser);
-router.get('/login',logIn);
-router.post('/login',verifyUser);
-router.get('/logout',logOut);
+    router.get('/', usersList);
+    router.get('/registration', addUser);
+    router.post('/registration', saveNewUser);
+    router.get('/edit/:id', editUserInfo);
+    router.post('/edit/:id',saveUserInfo);
+    router.get('/getDelete/:id', confirmDeleteUser);
+    router.get('/delete/:id', deleteUser);
+    router.get('/login',logIn);
+    router.post('/login',verifyUser);
+    router.get('/logout',logOut);
 
 
 
-app.use(
-    connection(mysql,{
-        host: 'localhost',
-        user: 'root',
-        password : 'rinson@123',
-        port : 3306, //port mysql
-        database:'nodedb'
-    },'pool') //or single
-);
-exports.list = function(req, res){
-  req.getConnection(function(err,connection){
-        var query = connection.query('SELECT * FROM customer',function(err,rows)
-        {
-            if(err)
-                console.log("Error Selecting : %s ",err );
-            res.render('customers',{page_title:"Employee List",data:rows});
-         });
-         //console.log(query.sql);
+    app.use(
+        connection(mysql,{
+            host: 'localhost',
+            user: 'root',
+            password : 'rinson@123',
+            port : 3306, //port mysql
+            database:'nodedb'
+        },'pool') //or single
+    );
+    exports.list = function(req, res){
+    req.getConnection(function(err,connection){
+            var query = connection.query('SELECT * FROM customer',function(err,rows)
+            {
+                if(err)
+                    console.log("Error Selecting : %s ",err );
+                res.render('customers',{page_title:"Employee List",data:rows});
+            });
+            //console.log(query.sql);
+        });
+    };
+
+
+
+    var mysql = require('mysql');
+    var connection = mysql.createConnection({
+        host:'localhost',
+        user:'root',
+        password:'rinson@123',
+        database:'mycompany'
     });
-};
-
-
-
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-	host:'localhost',
-	user:'root',
-	password:'rinson@123',
-	database:'mycompany'
-});
-connection.connect(function(error){
-	if(!!error) {
-		console.log(error);
-	} else {
-		console.log('Database Connected..!');
-	}
-});
-
-router.get('/', getEmployees)
-function getEmployees(req, res, next) {
-    dbConn.query('SELECT * FROM employees',function(err,rows)     {
-        if(err) {
-            res.render('index',{data:''});
+    connection.connect(function(error){
+        if(!!error) {
+            console.log(error);
         } else {
-            res.render('index',{data:rows});
+            console.log('Database Connected..!');
         }
     });
-}
+
+    router.get('/', getEmployees)
+    function getEmployees(req, res, next) {
+        dbConn.query('SELECT * FROM employees',function(err,rows)     {
+            if(err) {
+                res.render('index',{data:''});
+            } else {
+                res.render('index',{data:rows});
+            }
+        });
+    }
 
 
 
-if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('pages/error', {
-      message: err.message,
-      error: err
+    if (app.get('env') === 'development') {
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('pages/error', {
+        message: err.message,
+        error: err
+        });
     });
-  });
-}
+    }
 
-<%- include ../partials/header.ejs %>
-
+    <%- include ../partials/header.ejs %>
 
 
-app.use()  //middleware
+
+    app.use()  //middleware
 
 
- <select  class="form-select" id="cliente" name="cliente" value="<%= datos%>" tabindex="1" required>
-<% for(var i=0; i < datos.length; i++) { %>
-  <option 
-      <%= datos[i].datos %>
-  </option>
-<%}%>
-</select>
+    <select  class="form-select" id="cliente" name="cliente" value="<%= datos%>" tabindex="1" required>
+    <% for(var i=0; i < datos.length; i++) { %>
+    <option 
+        <%= datos[i].datos %>
+    </option>
+    <%}%>
+    </select>
 
 TYPESCRIPT:
     STtring METHODS:
@@ -1144,3 +1144,47 @@ TYPESCRIPT:
                 slice()	Extracts a section of the array and returns the new array
                 toString()	Returns a string representation of the array
                 toLocaleString()	Returns a localized string representing the array        
+
+TYPEORM:
+
+    With TypeORM your models look like this:
+
+            import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+
+            @Entity()
+            export class User {
+
+                @PrimaryGeneratedColumn()
+                id: number;
+
+                @Column()
+                firstName: string;
+
+                @Column()
+                lastName: string;
+
+                @Column()
+                age: number;
+
+            }
+            And your domain logic looks like this:
+
+            const repository = connection.getRepository(User);
+
+            const user = new User();
+            user.firstName = "Timber";
+            user.lastName = "Saw";
+            user.age = 25;
+            await repository.save(user);
+
+            const allUsers = await repository.find();
+            const firstUser = await repository.findOne(1); // find by id
+            const timber = await repository.findOne({ firstName: "Timber", lastName: "Saw" });
+
+            await repository.remove(timber);                
+
+
+
+    typeorm init --name MyProject --database mysql
+    typeorm init --express --name projectName --database mysql     //express
+ 

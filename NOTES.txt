@@ -1183,8 +1183,371 @@ TYPEORM:
 
             await repository.remove(timber);                
 
-
+COMMANDS    
 
     typeorm init --name MyProject --database mysql
     typeorm init --express --name projectName --database mysql     //express
+    TypeORMError: Entity metadata for Employee#department was not found. Check if you specified a correct entity object and if it's connected in the connection options
  
+
+
+        SET FOREIGN_KEY_CHECKS=0;
+        DROP TABLE department;
+        SET FOREIGN_KEY_CHECKS=1;
+
+
+        @Column({ unique: true })
+        @Unique(["firstName", "secondName"])
+
+        @Column({ unique: true })
+        firstName: string;
+
+        @Unique('my_unique_constraint', ['firstName'])  // make firstName unique
+        export class PersonEntity {
+
+        @Column({ unique: true })   // make firstName unique, too; decide which to chose
+        firstName: string;
+
+        @OneToOne(type => Photo)
+        @JoinColumn()
+        photo: Photo;
+
+        @OneToOne(type => Photo, photo => photo.metadata)
+        @JoinColumn()
+        photo: Photo;
+
+        @OneToOne(type => PhotoMetadata, photoMetadata => photoMetadata.photo)
+        metadata: PhotoMetadata;
+                                        or
+        @ManyToOne(()=> Department, department => department.employees)
+        department: Department;
+
+
+
+
+
+
+
+
+        import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+
+        @Entity()
+        export class User {
+
+            @PrimaryGeneratedColumn()
+            id: number;
+
+            @Column()
+            firstName: string;
+
+            @Column()
+            lastName: string;
+
+            @Column()
+            age: number;
+
+        }
+
+
+        const repository = connection.getRepository(User);
+
+        const user = new User();
+        user.firstName = "Timber";
+        user.lastName = "Saw";
+        user.age = 25;
+        await repository.save(user);
+
+        const allUsers = await repository.find();
+        const firstUser = await repository.findOne(1); // find by id
+        const timber = await repository.findOne({ firstName: "Timber", lastName: "Saw" });
+
+        await repository.remove(timber);
+
+    ACTIVE RECORD:
+
+        const user = new User();
+        user.firstName = "Timber";
+        user.lastName = "Saw";
+        user.age = 25;
+        await user.save();
+
+        const allUsers = await User.find();
+        const firstUser = await User.findOne(1);
+        const timber = await User.findOne({ firstName: "Timber", lastName: "Saw" });
+
+        await timber.remove();
+
+    COLUM DATA TYPES:
+            import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
+
+        @Entity()
+        export class Photo {
+
+            @PrimaryGeneratedColumn()
+            id: number;
+
+            @Column({
+                length: 100
+            })
+            name: string;
+
+            @Column("text")
+            description: string;
+
+            @Column()
+            filename: string;
+
+            @Column("double")
+            views: number;
+
+            @Column()
+            isPublished: boolean;
+        }
+
+
+
+        import { createConnection } from "typeorm";
+        import { Photo } from "./entity/Photo";
+
+        createConnection(/*...*/).then(async connection => {
+
+            /*...*/
+            let allPhotos = await photoRepository.find();
+            console.log("All photos from the db: ", allPhotos);
+
+            let firstPhoto = await photoRepository.findOne(1);
+            console.log("First photo from the db: ", firstPhoto);
+
+            let meAndBearsPhoto = await photoRepository.findOne({ name: "Me and Bears" });
+            console.log("Me and Bears photo from the db: ", meAndBearsPhoto);
+
+            let allViewedPhotos = await photoRepository.find({ views: 1 });
+            console.log("All viewed photos: ", allViewedPhotos);
+
+            let allPublishedPhotos = await photoRepository.find({ isPublished: true });
+            console.log("All published photos: ", allPublishedPhotos);
+
+            let [allPhotos, photosCount] = await photoRepository.findAndCount();
+            console.log("All photos: ", allPhotos);
+            console.log("Photos count: ", photosCount);
+
+        }).catch(error => console.log(error));    
+
+
+
+
+
+        createConnection(/*...*/).then(async connection => {
+
+            /*...*/
+            let photos = await connection
+                    .getRepository(Photo)
+                    .createQueryBuilder("photo")
+                    .innerJoinAndSelect("photo.metadata", "metadata")
+                    .getMany();
+
+
+        }).catch(error => console.log(error));
+
+
+    FINAL
+
+        let connection = await createConnection(options);
+
+            // create a few albums
+            let album1 = new Album();
+            album1.name = "Bears";
+            await connection.manager.save(album1);
+
+            let album2 = new Album();
+            album2.name = "Me";
+            await connection.manager.save(album2);
+
+            // create a few photos
+            let photo = new Photo();
+            photo.name = "Me and Bears";
+            photo.description = "I am near polar bears";
+            photo.filename = "photo-with-bears.jpg";
+            photo.views = 1
+            photo.isPublished = true
+            photo.albums = [album1, album2];
+            await connection.manager.save(photo);
+
+            // now our photo is saved and albums are attached to it
+            // now lets load them:
+            const loadedPhoto = await connection
+                .getRepository(Photo)
+                .findOne(1, { relations: ["albums"] });
+
+    >>>
+                {
+                    id: 1,
+                    name: "Me and Bears",
+                    description: "I am near polar bears",
+                    filename: "photo-with-bears.jpg",
+                    albums: [{
+                        id: 1,
+                        name: "Bears"
+                    }, {
+                        id: 2,
+                        name: "Me"
+                    }]
+                }
+
+
+
+emp:
+{
+    "id":1,
+    "name":"dijy",
+    "designation":"hr",
+    "hireDate":"2021-10-10",
+    "salary":50000,
+    "comments":"top performer",
+    "department":
+            {
+                "id":1,
+                "name":
+                "Accounts",
+                "location":"EKM"
+            },
+    "employeeid":
+            [
+             {
+                "worksOnId":1,
+                "hours":550,
+                "Projectid":
+                        {
+                            "id":1,
+                            "pName":"flipkart",
+                            "startDate":"2021-11-12",
+                            "duration":"3 months",
+                            "budget":20000
+                        }
+             }
+            ]
+}                
+
+
+{
+    "id":5,
+    "name":"nikhil",
+    "designation":"hr",
+    "hireDate":"2021-10-10",
+    "salary":50000,
+    "comments":"top performer",
+    "department":
+            {"id":10,"name":"Designing","location":"BLR"},
+    "employeeid":
+        [
+            {"worksOnId":7,"hours":200,
+                "Projectid":
+                    {"id":4,"pName":"Zomato","startDate":"2021-11-12","duration":"2 months","budget":35000}},
+            {"worksOnId":9,"hours":750,
+                "Projectid":
+                    {"id":6,"pName":"flipkart","startDate":"2021-11-12","duration":"3 months","budget":20000}}
+        ]
+}
+
+
+
+
+<tr>
+                <td class="label">Department:</td>
+                <td><% if(data2) { %>
+                    
+                      <select class="form-select" name="department">
+                        <option value="<%=data[0].departmentR.id%>" selected><%=data[0].departmentR.name%></option>
+                          <% for (var i in data2) { %>  
+                          <option  value="<%= data2[i].id %>"> <%= data2[i].name %> </option>
+                          <% } %>
+                      </select>
+
+                <% } %>
+                </td>                
+            </tr>
+
+
+{
+    "id":1,
+    "pName":"flipkart",
+    "startDate":"2021-11-12",
+    "duration":"3 months",
+    "budget":20000,
+    "ProjectWorkR":
+        [
+            {
+                "worksOnId":27,
+                "hours":550,
+                "WorkEmpR":
+                    {
+                        "id":2,"name":"Dijy Davis","designation":"Clerk","hireDate":"2021-10-10","salary":50000,"comments":"top performer"
+                    }
+            },
+            {
+                "worksOnId":30,
+                "hours":488,
+                "WorkEmpR":
+                    {
+                        "id":3,"name":"Sonu betti","designation":"clerk","hireDate":"2021-10-10","salary":50000,"comments":"top performer"
+                    }
+            }
+        ]
+}
+
+
+IFELSEEJS:( if else ejs)
+
+    <% if (age > 12) { %>
+        <p> valid!!!</p>
+    <%} else { %>
+        <p> Not Allowed </p>
+    <% } %>
+
+
+
+       
+    <% if (userType==='manager') { %>
+        
+    <%}%>
+
+
+    
+                        <tr>
+                            <td class="label"></td>
+                            <td>
+                                <a class="btn btn-primary edit" href="/employees/edit/<%=data.id%>">Edit<a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="label"></td>
+                            <td>
+                                <a class="btn btn-primary edit" href="/projects/edit/<%=data.id%>">Edit<a>
+                            </td>
+                        </tr>
+
+
+                        
+       const addEmp=await getRepository(Employee)
+       .find({
+         relations:["EmpWorkR"],
+         where:{}
+       })
+
+
+       <li>
+                <%=data.ProjectWorkR[index].WorkEmpR.name%> (<%=
+        data.ProjectWorkR[index].hours %> hrs/wk )
+            </li>
+
+
+
+
+            req{
+                body:{input:{student}}
+            }
+
+            res{
+                
+            }

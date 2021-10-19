@@ -1,0 +1,100 @@
+<%- include ("../partials/header.ejs") %>
+
+    <div class="card" style="margin-top: 80px;">
+        <div class="card-header">
+            <ul class="nav nav-pills w-100">
+                <li class="nav-pill active">
+                    <a class="nav-link">
+                        <h3>Project List</h3>
+                    </a>
+                </li>
+
+                <% if (userType==='manager' ) { %>
+                    <li class="nav-pill ml-auto">
+                        <a 
+                        style="background-color: rgb(36, 85, 95);"
+                        class="nav-link active" href="/projects/create">Add Project</a>
+                    </li>
+                    <%}%>
+
+            </ul>
+        </div>
+        <div class="card-body">
+
+            <% if(data.length) { %>
+                <table class="table">
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Project Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Budget</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <% %>
+
+                            <% for(var i=0; i< data.length; i++) { %>
+                                <tr>
+                                    <!-- <th scope="row"><%= (i+1) %></th> -->
+                                    <td>
+                                        <%= data[i].id%>
+                                    </td>
+                                    <td>
+                                        <%= data[i].pName%>
+                                    </td>
+                                    <td>
+                                        <%= data[i].startDate%>
+                                    </td>
+
+                                    <td>
+                                        <%= data[i].duration%>
+                                    </td>
+                                    <td>
+                                        <%= data[i].budget%>
+                                    </td>
+
+                                    <td>
+                                        <a style="color: rgb(27, 90, 27);
+                                " class="" href="/projects/info/<%=data[i].id%>"><i class="fa fa-info-circle"
+                                                aria-hidden="true" title="More Info" style="font-size:30px;"></i></a>
+
+
+                                        <% if (userType==='manager' ) { %>
+                                            <a style="color: rgb(40, 40, 77);
+                                            " class="" href="/projects/edit/<%=data[i].id%>"><i
+                                                    class="fa fa-pencil-square" aria-hidden="true"
+                                                    title="Edit Employee?" style="
+                                                font-size:30px;"></i><a>
+
+                                                    <a style="color: rgb(141, 37, 37);
+                                            " class="" onclick="return confirm('Are You sure?')"
+                                                        href="/projects/delete/<%=data[i].id%>"><i class="fa fa-trash"
+                                                            title="Delete Employee?" style="font-size:30px;"
+                                                            aria-hidden="true"></i></a>
+                                                    <%}%>
+
+
+
+                                    </td>
+                                </tr>
+                                <% } %>
+                    </tbody>
+                </table>
+                <% } %>
+
+                    <!-- if result is empty -->
+                    <% if(!data.length) { %>
+                        <p class="text-center">No Projects found!</p>
+                        <% } %>
+
+
+        </div>
+    </div>
+
+
+    <%- include ("../partials/footer.ejs") %>

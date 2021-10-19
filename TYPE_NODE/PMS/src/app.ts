@@ -35,13 +35,14 @@ createConnection()
     app.use(cookieParser());
     app.use(express.static(path.join(__dirname, "public")));
 
+    app.use("/", indexRouter);
+
     // catch 404 and forward to error handler
     app.use(function (req, res, next) {
       next(createError(404));
     });
 
     //routing
-    app.use("/", indexRouter);
 
     // error handler
     app.use(function (err, req, res, next) {
@@ -58,7 +59,7 @@ createConnection()
     app.listen(3000);
 
     console.log(
-      "Express server has started on port 3000. Open http://localhost:3000/users to see results"
+      "Express server has started on port 3000. Open http://localhost:3000/us to see results"
     );
   })
   .catch((error) => console.log(error));

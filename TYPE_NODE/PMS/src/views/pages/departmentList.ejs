@@ -40,20 +40,19 @@
                 <tr>
                     <!-- <th scope="row"><%= (i+1) %></th> -->
                     <td><%= data[i].id%></td>
-                    <td><%= data[i].%></td>
-                    <td><%= data[i].job%></td>
-                    <td><%= data[i].mgr%></td>
+                    <td><%= data[i].name%></td>
+                    <td><%= data[i].location%></td>
 
                     <td>
-                    <a  href="/employees/info/<%=data[i].emp_no%>"><i class="fa fa-info-circle" 
+                    <a  href="/employees/info/<%=data[i].id%>"><i class="fa fa-info-circle" 
                         aria-hidden="true"
                         title="More Info"
                         style="font-size:30px;"></i></a>
-                    <a  href="/employees/edit/<%=data[i].emp_no%>"><i class="fa fa-pencil-square" 
+                    <a  href="/employees/edit/<%=data[i].id%>"><i class="fa fa-pencil-square" 
                         aria-hidden="true"
                         title="Edit Employee?"
                         style="font-size:30px;"></i><a>                       
-                        <a  onclick="return confirm('Are You sure?')" href="/employees/delete/<%=data[i].emp_no%>"><i class="fa fa-trash"
+                        <a  onclick="return confirm('Are You sure?')" href="/employees/delete/<%=data[i].id%>"><i class="fa fa-trash"
                             title="Delete Employee?" 
                             style="font-size:30px;" 
                             aria-hidden="true"></i></a>                       

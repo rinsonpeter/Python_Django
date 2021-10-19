@@ -109,31 +109,30 @@ function infoEmp(req, res, next) {
 }
 
 function getAllEmp(req, res, next) {
-  if (req.session.usertype){
+  if (req.session.usertype) {
     console.log(req.session.username, req.session.usertype);
 
-  req.getConnection(function (err, connection) {
-    var query = connection.query(
-      "SELECT * FROM employees",
-      function (err, rows) {
-        if (err) {
-          res.render("pages/getAllEmp", {
-            data: "",
-          });
-        } else {
-          res.render("pages/getAllEmp", {
-            data: rows,
-          });
+    req.getConnection(function (err, connection) {
+      var query = connection.query(
+        "SELECT * FROM employees",
+        function (err, rows) {
+          if (err) {
+            res.render("pages/getAllEmp", {
+              data: "",
+            });
+          } else {
+            res.render("pages/getAllEmp", {
+              data: rows,
+            });
+          }
         }
-      }
-    );
-  });
+      );
+    });
+  } else {
+    res.render("pages/loginPage", {
+      errorMessage: "Please login to continue..",
+    });
   }
-  else{
-    res.render("pages/loginPage",{errorMessage:"Please login to continue.."})
-  }
-
-  
 }
 
 function addEmp(req, res, next) {

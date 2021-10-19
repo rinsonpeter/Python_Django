@@ -1,0 +1,93 @@
+<%- include ("../partials/header.ejs") %>
+
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+
+        <div class="page-data"><br> <br><br>
+
+            <form method="post" action="/employees/edit/<%=data[0].id%>" onsubmit="" >
+                <table cellpadding="11">
+        
+                    <tr>
+                        <td class="label">Employee Name</td>
+                        <td> <input class="form-control" type="text" name="name" value="<%=data[0].name%>" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Email</td>
+                        <td> <input class="form-control"  type="text" name="email" value="<%=data[0].email%>" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Password</td>
+                        <td> <input class="form-control"  type="text" name="password" value="<%=data[0].password%>" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">UserType</td>
+                        <td>
+                        <select id="usertype" name="usertype"
+                        class="form-select">
+        
+                            <option value="manager">Manager</option>
+                            <option value="admin">Admin</option>
+                            <option value="employee">Employee</option>
+                            <option value="<%=data[0].usertype%>" selected><%=data[0].usertype%></option>
+        
+                          </select>
+                        </td>  
+                    </tr>
+        
+        
+                    <tr>
+                        <td class="label">Designation</td>
+                        <td> <input class="form-control"  type="text" name="designation" value="<%=data[0].designation%>" required></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="label">Hire Date</td>
+                        <td> <input type="text" name="hireDate" class="form-control"  value="<%=data[0].hireDate%>" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">Salary</td>
+                        <td> <input type="text" value="<%=data[0].salary%>" name="salary" class="form-control"  required></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Department:</td>
+                        <td><% if(data2) { %>
+                            
+                              <select class="form-select" name="department">
+                                <option value="<%=data[0].departmentR.id%>" selected><%=data[0].departmentR.name%></option>
+                                  <% for (var i in data2) { %>  
+                                  <option  value="<%= data2[i].id %>"> <%= data2[i].name %> </option>
+                                  <% } %>
+                              </select>
+        
+                        <% } %>
+                        </td>                
+                    </tr>
+                    <tr>
+                        <td class="label">Comments</td>
+                        <td> <input type="text" name="comments" value="<%=data[0].comments%>" class="form-control"  required></td>
+                    </tr>
+                    <tr>
+                        <td class="label"></td>
+                        <td>
+                            <input class='btn btn-primary' type="submit" name="submit" class="form-control"  value="Save">
+                            <a href="/employees"><button class='btn btn-primary'>Cancel</button></a>
+                            
+          
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="col-3"></div>
+</div>
+
+
+
+
+<%- include ("../partials/footer.ejs") %>

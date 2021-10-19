@@ -1,0 +1,133 @@
+<%- include ("../partials/header.ejs") %>
+
+    <div class="row">
+        <div class="col-5">
+            <div class="page-data">
+                <br />
+                <br /><br />
+                <br />
+
+                <h3>Project Info</h3>
+                <br />
+                <form method="post" action="">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td class="label">Project Id</td>
+                            <td>
+                                <%=data.id%>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">Name</td>
+                            <td>
+                                <%=data.pName%>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">start Date</td>
+                            <td>
+                                <%=data.startDate%>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="label">Duration</td>
+                            <td>
+                                <%= data.duration %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">Budget</td>
+                            <td>
+                                <%= data.budget %>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="col-4">
+            <br /><br /><br /><br />
+            <h3>Employees</h3>
+            <br />
+
+            <% if (data.ProjectWorkR.length) { %>
+
+                <table class="table table-bordered">
+
+                    <tr>
+
+                        <th>
+                            Employee Name
+                        </th>
+                        <th>
+                            Hours/Week
+                        </th>
+                    </tr>
+                    <% for( let index=0; index < data.ProjectWorkR.length; index++ ) { %>
+
+
+                        <tr>
+
+                            <td>
+                                <%=data.ProjectWorkR[index].WorkEmpR.name%>
+                            </td>
+                            <td>
+                                <%=data.ProjectWorkR[index].hours %> hrs/wk
+                            </td>
+                            <td>
+                                
+                                <a onclick="return confirm('Are You sure?')" class="delete" title="Delete" data-toggle="tooltip" href="/projects/projectDelete/<%=data.ProjectWorkR[index].worksOnId%>/<%=data.id%>"> <i class=" material-icons ">&#xE872;</i></a>
+
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <% } %>
+                </table>
+
+                <%} else { %>
+                    <p>No Employees Assigned !!!</p>
+                    <% } %>
+        </div>
+
+    </div><br>
+    <% if ((userType==='manager' ) || (userType==='admin' )) { %>
+        <hr>
+        <div style="max-width: 50%;">
+            <br>
+            <h3>Add Employee to Project</h3>
+            <br /><br />
+
+            <% if (data2.length>0) { %>
+
+                <form method="post" action="/projects/addToProject/<%=data3%>">
+                    <label for="cars">Employee Name:</label>
+                    <select id="cars" class="form-select" name="empList" required>
+                        <% for (var i=1; i < data2.length; i++) { %>
+                            <option value="<%= data2[i].id %>">
+                                <%= data2[i].name %>
+                            </option>
+                            <% } %>
+
+                                <option value="<%= data2[0].id %>" selected>
+                                    <%= data2[0].name %>
+                                </option>
+                    </select>
+
+                    <label for="cars">Allocate hours:</label>
+                    <input type="text" name="hours" required id="name" class="form-control" /><br />
+
+                    <input type="submit" value="Add" class="btn btn-primary" style="margin-left: 85%;background-color: rgb(36, 85, 95); " />
+                </form>
+
+                <% } %>
+        </div>
+
+        <%}%>
+
+
+            <%- include ("../partials/footer.ejs") %>

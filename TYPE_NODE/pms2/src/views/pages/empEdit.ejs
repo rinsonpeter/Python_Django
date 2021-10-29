@@ -2,13 +2,13 @@
 
 
 <div class="row">
-    <div class="col-3"></div>
-    <div class="col-6">
+    <div class="col-2"></div>
+    <div class="col-8">
 
-        <div class="page-data"><br> <br><br>
+        <div class="page-data"><br> <br><br><h3>Employee Edit</h3><br>
 
             <form method="post" action="/employees/edit/<%=data[0].id%>" onsubmit="" >
-                <table cellpadding="11">
+                <table cellpadding="5">
         
                     <tr>
                         <td class="label">Employee Name</td>
@@ -74,17 +74,21 @@
                     <tr>
                         <td class="label"></td>
                         <td>
-                            <input class='btn btn-primary' type="submit" name="submit" class="form-control"  value="Save">
-                            <a href="/employees"><button class='btn btn-primary'>Cancel</button></a>
+                            <input class='btn btn-primary'  style="background-color: rgb(36, 85, 95);"
+                            type="submit" name="submit" class="form-control"  value="Save">
+                            <a href="/employees"><button 
+                                style="background-color: rgb(36, 85, 95);"
+                                 class='btn btn-primary'>Cancel</button></a>
                             
           
                         </td>
                     </tr>
                 </table>
             </form>
+        
         </div>
     </div>
-    <div class="col-3"></div>
+    <div class="col-2"></div>
 </div>
 
 

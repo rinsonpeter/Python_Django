@@ -24,8 +24,6 @@ export class EmployeeController {
       return 
   };
 
-  
-
   static infoEmployees = async (
     req: Request,
     res: Response,

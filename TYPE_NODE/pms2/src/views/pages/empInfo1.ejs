@@ -1,0 +1,129 @@
+<%- include ("../partials/header.ejs") %>
+
+
+    <div class="row">
+        <div class='col-4'>
+            <div class="page-data"><br> <br><br><br>
+
+                <h3>Employee Info</h3><br>
+
+                    <table cellpadding="11" class="table table-bordered">
+
+                        <tr>
+                            <td class="label"><strong>Employee Name</strong></td>
+                            <td> <%=data.name%>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="label"><strong>Email</strong></td>
+                            <td> <%=data.email%>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="label"><strong>UserType</strong></td>
+                            <td> <%=data.usertype%>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="label"><strong>designation</strong></td>
+                            <td> <%=data.designation%>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><strong>HireDate</strong></td>
+                            <td> <%=data.hireDate%>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><strong>Salary</strong></td>
+                            <td> <%=data.salary%>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><strong>Comments</strong></td>
+                            <td> <%= data.comments %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><strong>Department</strong></td>
+                            <td> <%= data.departmentR.name %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><strong>Location</strong></td>
+                            <td> <%= data.departmentR.location %>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                
+            </div>
+        </div>
+
+
+
+        <div class='col-8'>
+            <br><br><br><br>
+            <h3>Projects Details</h3><br><br>
+
+
+
+
+
+
+            <% if (data.EmpWorkR.length) { %>
+                <table class="table table-bordered">
+                        <tr>
+                                <td><strong>#</strong></td>
+                                <td><strong>Project Name</strong></td>
+                                <td><strong>Hours/week</strong></td>
+                        </tr>
+                
+                
+                    <% for( let index=0; index < data.EmpWorkR.length; index++ ) { %>
+
+
+                        
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Projects</h5>
+                  <% for( let index=0; index < data.EmpWorkR.length; index++ ) { %>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                  <%} 
+                </div>
+              </div>
+
+              else { %>
+                
+                <p> No Projects Assigned !!! </p>
+                
+            <% } %>
+                        
+                        <tr>
+                            <td> <%= index+1 %>  </td>
+                            <td><%=data.EmpWorkR[index].WorkProjectR.pName%></td>
+                            <td><%=data.EmpWorkR[index].hours  %>hrs</td>
+                        </tr>
+            
+                        
+                        <% } %>
+                </table>
+            <%} else { %>
+                
+                <p> No Projects Assigned !!! </p>
+                
+            <% } %>
+            
+        </div>
+    </div>
+
+
+
+
+    <%- include ("../partials/footer.ejs") %>

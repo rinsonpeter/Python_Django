@@ -1,0 +1,59 @@
+<!DOCTYPE html >
+<html>
+<head>
+<div id='div1' v-bind:title="div_title">
+{{message}}
+</div>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+var v1 = new Vue({
+el: "#div1",
+data: {
+message: "Life Cycle events",
+div_title: "This is my intro div",
+},
+beforeCreate: function(){ 
+    /*A Vue object is instantiated with the new method.
+This phase of life of the object can be  accessed here. 
+insert our code in this hook to be executed before the object gets initialized.*/
+alert('Before Create:executed before the object gets initialized');
+},
+created: function(){ 
+alert('Created: object..... and its events are fully initialized');
+},
+beforeMount: function(){ 
+alert('Before Mount..... Object Taking Shape to Fit in the DOM');
+/*checks if any template is available in the object to be rendered in the DOM */
+},
+mounted: function(){ 
+alert('Mounted:DOM..... Is Ready and Placed Inside the Page');
+/*Once the template is ready.
+It fits the data into the template and creates the renderable element.
+ Replaces the DOM element with this new data filled element*/
+},
+beforeUpdate: function(){ 
+/*Upon changes made by the external event/user input this hook,
+  gets fired before the changes reflecting the original DOM element.*/
+alert('Before Update:Changes Made & Yet Getting Ready to Update the DOM');
+},
+updated: function(){ 
+/*changes get rendered on the screen by actually updating the DOM object and fires the updated hook.*/
+alert('Updated:Changes Rendered in the DOM');
+},
+beforeDestroy: function(){ 
+    /*Just before the Vue object gets destroyed and freed up from the memory,*/
+alert('Before Destroy:Object Is Ready to Die');
+},
+destroyed: function(){ 
+alert('Destroyed:Object Died and Removed From the Memory');
+}
+});
+// To fire update
+v1.$data.message = "Message updated";
+// This can be invoked to destroy the object, which will fire the destroy hook
+v1.$destroy();
+</script>
+</body>
+</html>

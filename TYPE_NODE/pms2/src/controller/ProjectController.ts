@@ -24,6 +24,7 @@ export class ProjectController {
 
     return newPrj;
   };
+  
   static saveEditProject = async (myData, id) => {
     const editPrj = await getConnection()
       .createQueryBuilder()
@@ -83,7 +84,6 @@ export class ProjectController {
     return {prj,posts,id};
   };
 
-  
   static deleteProject = async (id) => {
     //console.log("inside controller delete emp")
     await getConnection()

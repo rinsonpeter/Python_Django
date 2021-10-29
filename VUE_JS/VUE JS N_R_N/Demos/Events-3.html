@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Vue-Events</title> 
+    <style>
+               
+    </style>
+   </head> 
+  
+   <body> 
+       <!--Container div-->
+       <div id="app">
+        
+        <template>
+            <button @click="handleClick('parameterToEvent', $event)">Handle Events</button>
+          </template>
+              </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script>
+//create a vue instance
+var app = new Vue({
+    //the mounting point is #app
+        el: '#app',
+        data: {
+           message:'Event handling',
+           
+        },
+        methods:{
+           
+    handleClick: function(text,event) {
+      alert("we can pass parameters to an event handler :"+text)
+      alert("The event details are"+event)
+      //console.log(event)
+
+      for ( i in event)
+        console.log(i)
+    }
+  }
+        
+});
+
+       </script>
+       </body>
+       </html>

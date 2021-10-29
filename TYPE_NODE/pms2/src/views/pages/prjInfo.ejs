@@ -3,47 +3,26 @@
     <div class="row">
         <div class="col-5">
             <div class="page-data">
-                <br />
-                <br /><br />
-                <br />
+                <br>
+                <br><br>
+                <br>
 
                 <h3>Project Info</h3>
-                <br />
-                <form method="post" action="">
-                    <table class="table table-bordered">
-                        <tr>
-                            <td class="label">Project Id</td>
-                            <td>
-                                <%=data.id%>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label">Name</td>
-                            <td>
-                                <%=data.pName%>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label">start Date</td>
-                            <td>
-                                <%=data.startDate%>
-                            </td>
-                        </tr>
+                <br>
 
-                        <tr>
-                            <td class="label">Duration</td>
-                            <td>
-                                <%= data.duration %>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label">Budget</td>
-                            <td>
-                                <%= data.budget %>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+                <div class="card" style="width: 18rem; background-color: rgb(208, 227, 228);">
+                    <div class="card-body">
+                        
+                      <h4 class="card-title"><%=data.pName%></h4>
+                      
+                      <p class="card-text">US Project that takes care of customer relation ERP and quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p> <strong>StartDate :</strong>  <%=data.startDate%></p>
+                      <p> <strong>Duration :</strong>  <%= data.duration %></p>
+                      <p> <strong>Budget :</strong>  <%= data.budget %></p>
+
+                    </div>
+                  </div>
+                
             </div>
         </div>
         <div class="col-4">
@@ -56,18 +35,31 @@
                 <table class="table table-bordered">
 
                     <tr>
+                        <th><strong>#</strong>
 
+                        </th>
                         <th>
-                            Employee Name
+                            Employee
                         </th>
                         <th>
                             Hours/Week
                         </th>
+
+                        <% if ((userType==='manager')|| (userType==='admin' )) { %>
+                            <th>
+                                Actions
+                            </th>
+
+                            <%}%>
+                        
                     </tr>
                     <% for( let index=0; index < data.ProjectWorkR.length; index++ ) { %>
 
 
                         <tr>
+                            <td>
+                                <%= index+1 %>
+                            </td>
 
                             <td>
                                 <%=data.ProjectWorkR[index].WorkEmpR.name%>
@@ -75,11 +67,18 @@
                             <td>
                                 <%=data.ProjectWorkR[index].hours %> hrs/wk
                             </td>
-                            <td>
-                                
-                                <a onclick="return confirm('Are You sure?')" class="delete" title="Delete" data-toggle="tooltip" href="/projects/projectDelete/<%=data.ProjectWorkR[index].worksOnId%>/<%=data.id%>"> <i class=" material-icons ">&#xE872;</i></a>
 
-                            </td>
+                            <% if ((userType==='manager')|| (userType==='admin' )) { %>
+                                <td>
+
+                                    <a onclick="return confirm('Are You sure?')" class="delete" title="Delete"
+                                        data-toggle="tooltip"
+                                        href="/projects/projectDelete/<%=data.ProjectWorkR[index].worksOnId%>/<%=data.id%>">
+                                        <i class=" material-icons ">&#xE872;</i></a>
+    
+                                </td>
+                            <%}%>
+                            
                         </tr>
 
 
@@ -97,6 +96,7 @@
     </div><br>
     <% if ((userType==='manager' ) || (userType==='admin' )) { %>
         <hr>
+        
         <div style="max-width: 50%;">
             <br>
             <h3>Add Employee to Project</h3>
@@ -118,16 +118,20 @@
                                 </option>
                     </select>
 
-                    <label for="cars">Allocate hours:</label>
+                    <label for="cars">Allocate hours/week:</label>
                     <input type="text" name="hours" required id="name" class="form-control" /><br />
 
-                    <input type="submit" value="Add" class="btn btn-primary" style="margin-left: 85%;background-color: rgb(36, 85, 95); " />
+                    <input type="submit" value="Add" class="btn btn-primary"
+                        style="margin-left: 85%;background-color: rgb(36, 85, 95); " />
                 </form>
 
+                <% }else{ %>
+                    <p style="margin-left: 10%;"> All Employees are working here </p>
                 <% } %>
+
+
+
+    <%}%>
+
         </div>
-
-        <%}%>
-
-
-            <%- include ("../partials/footer.ejs") %>
+        <%- include ("../partials/footer.ejs") %>

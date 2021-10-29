@@ -464,6 +464,22 @@ JAVASCRIPT:
             const constVar={name:"bob"}
             const.name="sally"
 
+
+LOCAL STORAGE
+
+localStorage.setItem("myProjectsLoc", JSON.stringify(myProjects));
+
+var locUsers = JSON.parse(localStorage.getItem("myusers"));
+
+
+Event	Description
+onchange	An HTML element has been changed
+onclick	The user clicks an HTML element
+onmouseover	The user moves the mouse over an HTML element
+onmouseout	The user moves the mouse away from an HTML element
+onkeydown	The user pushes a keyboard key
+onload	The browser has finished loading the page
+
     JAVASCRIPT STATEMENTS:
         <script>
             var x, y, z;  // Declare 3 variables
@@ -1507,11 +1523,11 @@ IFELSEEJS:( if else ejs)
 
 
        
-    <% if (userType==='manager') { %>
+    <% if ((userType==='manager')|| (userType==='admin' )) { %>
         
     <%}%>
 
-
+rgb(36, 85, 95)
     
                         <tr>
                             <td class="label"></td>
@@ -1551,3 +1567,73 @@ IFELSEEJS:( if else ejs)
             res{
                 
             }
+
+
+VUE JS:
+
+************************************************
+    npm install -g @vue/cli
+    vue --version
+    npm update -g @vue/cli
+
+<form v-on:submit.prevent="onSubmit"> ... </form>
+
+***********************************************
+
+ROUTER PUSH
+
+this.$router.push('/courses');
+
+*************   v-bind Shorthand   *************
+ 
+<!-- full syntax -->
+<a v-bind:href="url"> ... </a>
+
+<!-- shorthand -->
+<a :href="url"> ... </a>
+
+<!-- shorthand with dynamic argument (2.6.0+) -->
+<a :[key]="url"> ... </a>
+
+
+*************     v-on Shorthand         ********
+
+<!-- full syntax -->
+<a v-on:click="doSomething"> ... </a>
+
+<!-- shorthand -->
+<a @click="doSomething"> ... </a>
+
+<!-- shorthand with dynamic argument (2.6.0+) -->
+<a @[event]="doSomething"> ... </a>
+
+******************************************************
+
+Instead of a computed property, we can define the same function as a method. For the end result, the two approaches are indeed exactly the same. However, the difference is that computed properties are cached based on their reactive dependencies. A computed property will only re-evaluate when some of its reactive dependencies have changed. This means as long as message has not changed, multiple access to the reversedMessage computed property will immediately return the previously computed result without having to run the function again.
+
+*******************************************************
+***********          Computed Setter      *********
+
+Computed properties are by default getter-only, but you can also provide a setter when you need it:
+
+    // ...
+    computed: {
+    fullName: {
+        // getter
+        get: function () {
+        return this.firstName + ' ' + this.lastName
+        },
+        // setter
+        set: function (newValue) {
+        var names = newValue.split(' ')
+        this.firstName = names[0]
+        this.lastName = names[names.length - 1]
+        }
+    }
+    }
+    // ...
+
+
+****************************************************
+
+

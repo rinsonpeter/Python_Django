@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Conditional Rendering</title> 
+       <h3>Conditional Rendering</h3>
+       <h4>v-if,v-if-else</h4>
+   </head> 
+  
+   <body> 
+       <!--Container div-->
+                 
+        <div id="app">
+       
+            <button v-if="isLoggedIn" @click="toggle">Logout</button>
+            <label v-else-if="isLoginDisabled" @click="enable">Click here to Enable Login </label>
+            <button v-else @click="toggle"> Log In </button><br/>
+            <input v-show="show" type="text" value="this is for v-show"  @click="show = !show">
+                       </div>
+                      
+                     
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script>
+//create a vue instance
+var app = new Vue({
+    //the mounting point is #app
+        el: '#app',
+        data: {
+           message:'Welcome to the world of',
+           topic:'Vue.js',
+           isLoggedIn: false,
+           isLoginDisabled:true,
+           show:true
+        },
+        methods:{
+            toggle()
+            { this.isLoggedIn=(this.isLoggedIn)?false:true;
+            },
+
+           enable()
+            {this.isLoginDisabled=false}
+        }
+        
+        
+});
+
+       </script>
+       </body>
+       </html>

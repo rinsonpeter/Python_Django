@@ -10,11 +10,10 @@ const router = Router();
 router.get("/", async function (req, res) {
   let empEmail = req.session.empEmail;
   var userType = req.session.userType;
-  console.log("project all :sess type***", userType);
   if (empEmail) {
     //console.log("inside routes project");
     ProjectController.getProjects().then((data) => {
-      res.render("pages/prjAll", { data: data, userType: userType });
+      res.render("pages/prjAll1", { data: data, userType: userType });
     });
   } else {
     res.render("pages/loginPage", { errorMessage: "Please Login to continue" });

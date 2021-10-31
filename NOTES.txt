@@ -1578,7 +1578,7 @@ VUE JS:
 
 <form v-on:submit.prevent="onSubmit"> ... </form>
 
-***********************************************
+**********************************************
 
 ROUTER PUSH
 
@@ -1587,8 +1587,8 @@ this.$router.push('/courses');
 *************   v-bind Shorthand   *************
  
 <!-- full syntax -->
-<a v-bind:href="url"> ... </a>
-
+<a v-bind:href="url"> ... </a>          v-bind:href="url"   =>   :href="url"
+                                        v-on:click="fn"     =>   @click="fn"   
 <!-- shorthand -->
 <a :href="url"> ... </a>
 
@@ -1637,3 +1637,22 @@ Computed properties are by default getter-only, but you can also provide a sette
 ****************************************************
 
 
+                        ROUTER VUE
+
+
+                                const router = new VueRouter({
+        routes: [
+            {
+            path: '/user/:userId',
+            name: 'user',
+            component: User
+            }
+        ]
+        })
+        To link to a named route, you can pass an object to the router-link component's to prop:
+
+        <router-link :to="{ name: 'user', params: { userId: 123 }}">User</router-link>
+
+        This is the exact same object used programmatically with router.push():
+
+        router.push({ name: 'user', params: { userId: 123 } })

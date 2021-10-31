@@ -65,6 +65,8 @@ export default {
       if (this.valid) {
         console.log("MYMAil;;;;;",myMail)
         alert("login success");
+        this.email=null
+        this.pass=null
         this.$store.dispatch("checkLogin", myMail);
         // e.preventDefault();
       } else {

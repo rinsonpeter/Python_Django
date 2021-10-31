@@ -13,8 +13,14 @@
         >
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
+          <v-btn flat to="/projects">Projects</v-btn>
+          <v-btn flat to="/about">Employees</v-btn>
+
+
           <v-btn flat to="/" exact>Home</v-btn>
-          <v-btn flat to="/about">About</v-btn>
+          
+          
+
         </v-toolbar-items>
       </v-toolbar>
       <!-- End of app toolbar -->

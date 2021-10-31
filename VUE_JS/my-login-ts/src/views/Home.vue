@@ -45,7 +45,6 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
-
 @Component
 export default class Login extends Vue {
   private email= "";
@@ -62,12 +61,13 @@ export default class Login extends Vue {
           storedPassword: "rinson",
         },
       ];
+  $router: any;
 
     login () {
       this.valid = false;
 
       localStorage.setItem("arrayLogin", JSON.stringify(this.loginArray));
-      var locUsers = JSON.parse(localStorage.getItem("arrayLogin"));
+      var locUsers= JSON.parse(localStorage.getItem("arrayLogin"));
 
       for (var i = 0; i < locUsers.length; i++) {
         if (
@@ -82,17 +82,13 @@ export default class Login extends Vue {
         }
       }
       if (this.valid) {
-        console.log("MYMAil------",myMail)
+ //       console.log("MYMAil------",myMail)
         alert("login success");
+        this.$router.push('/projects');
 //        this.$store.dispatch("checkLogin", myMail);
       } else {
         alert("invalid credentials");
       }
-    }   
-
-   
-
-
-
+    } 
 }
 </script>

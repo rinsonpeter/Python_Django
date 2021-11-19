@@ -1,0 +1,84 @@
+<%- include ("../partials/header.ejs") %>
+
+<div class="card" style="margin-top: 80px; ">
+    <div class="card-header">
+        <ul class="nav nav-pills w-100">
+            <li class="nav-pill active">
+                <a class="nav-link">
+                    <h3>Project List</h3>
+                </a>
+            </li>
+
+            <% if ((userType==='manager' )||(userType==='admin' )) { %>
+            <li class="nav-pill ml-auto">
+                <a style="background-color: rgb(36, 85, 95);" class="nav-link active" href="/projects/create">Add
+                    Project</a>
+            </li>
+            <%}%>
+
+            </ul>
+    </div>
+        <div class="card-body">
+
+            <% if(data.length) { %>
+
+                <div style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: left; ">
+
+                    
+                    <% for(var i=0; i< data.length; i++) { %>
+
+                        <div class="card" style="width: 18rem; margin: 30px;background-color: rgb(208, 227, 228);">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= data[i].pName%>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">start date: <%= data[i].startDate%>
+                                </h6>
+
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <p>Duration: <%= data[i].duration%>
+                                </p>
+                                <p>Budget: <%= data[i].budget%>
+                                </p>
+
+                                <a style="color: rgb(27, 90, 27);
+                                            " class="" href="/projects/info/<%=data[i].id%>"><i class="fa fa-info-circle"
+                                        aria-hidden="true" title="More Info" style="font-size:30px;"></i></a>
+
+                                <% if ((userType==='manager' ) || (userType==='admin' )) { %>
+                                <a style="color: rgb(40, 40, 77);
+                                                                " class="" href="/projects/edit/<%=data[i].id%>"><i
+                                        class="fa fa-pencil-square" aria-hidden="true" title="Edit Employee?" style="
+                                                                    font-size:30px;"></i><a>
+
+                                        <a style="color: rgb(141, 37, 37);
+                                                                " class="" onclick="return confirm('Are You sure?')"
+                                            href="/projects/delete/<%=data[i].id%>"><i class="fa fa-trash" title="Delete Employee?"
+                                                style="font-size:30px;" aria-hidden="true"></i></a>
+                                        <%}%>
+                            </div>
+
+                        </div>
+
+                    <% } %>
+
+                </div>
+                
+
+
+            <% } %>
+
+
+
+                            <!-- if result is empty -->
+                            <% if(!data.length) { %>
+                            <p class="text-center">No Projects found!</p>
+                            <% } %>
+
+
+        </div>
+</div>
+
+
+            <%- include ("../partials/footer.ejs") %>

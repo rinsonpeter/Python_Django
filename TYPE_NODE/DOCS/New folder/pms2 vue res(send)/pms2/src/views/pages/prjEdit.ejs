@@ -1,0 +1,47 @@
+<%- include ("../partials/header.ejs") %>
+
+
+<div class="page-data"><br> <br><br><br>
+
+    <h3>Project Edit </h3>  <br>
+
+    <form method="post" action="/projects/edit/<%=data[0].id%>" onsubmit="" >
+        <table cellpadding="11">
+
+            <tr>
+                <td class="label">Project Name</td>
+                <td> <input class="form-control" type="text" name="pName" value="<%=data[0].pName%>" required></td>
+            </tr>
+            <tr>
+                <td class="label">Start Date</td>
+                <td> <input class="form-control"  type="text" name="startDate" value="<%=data[0].startDate%>" required></td>
+            </tr>
+
+            
+            
+            <tr>
+                <td class="label">Duration</td>
+                <td> <input type="text" value="<%=data[0].duration%>" name="duration" class="form-control"  required></td>
+            </tr>
+            
+            <tr>
+                <td class="label">Budget</td>
+                <td> <input type="text" name="budget" value="<%=data[0].budget%>" class="form-control"  required></td>
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <input class='btn btn-primary' style="background-color: rgb(36, 85, 95);" type="submit" name="submit" class="form-control"  value="Save">
+
+
+                    <a style="background-color: rgb(36, 85, 95);"
+                    href="/projects"><button class='btn btn-primary' style="background-color: rgb(36, 85, 95);" >Cancel</button></a>
+                    
+  
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<%- include ("../partials/footer.ejs") %>

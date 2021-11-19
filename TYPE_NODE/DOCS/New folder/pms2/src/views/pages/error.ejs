@@ -1,0 +1,19 @@
+
+
+<a class="navbar-brand" href="/employees/"><i class="fa fa-fw fa-home"></i>Employee Page</a><br><br>
+
+<a class="navbar-brand" href="/projects/"><i class="fa fa-fw fa-home"></i>projects Page</a>
+
+<% if (message) { %>
+    <h1><%= message %></h1>
+<% } %>
+
+<% if (error.status) { %>
+    <h2><%= error.status %></h2> 
+<% } %>
+
+<% if (error.stack) { %>
+    <pre><%= error.stack %></pre> 
+<% } %>
+
+

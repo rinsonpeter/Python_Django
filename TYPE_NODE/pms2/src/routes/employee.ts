@@ -22,7 +22,7 @@ router.get("/create", async function (req, res) {
 router.post("/create", async function (req, res) {
   let empEmail = req.session.empEmail;
   var userType = req.session.userType;
-  if (empEmail) {
+//  if (empEmail) {
     var input = req.body;
     var empData = {
       name: input.name,
@@ -36,11 +36,12 @@ router.post("/create", async function (req, res) {
       usertype: input.usertype,
     };
     EmployeeController.saveEmployees(empData).then((data) => {
-      res.redirect("/employees");
+      res.send("success add employee BE")
+      //res.redirect("/employees");
     });
-  } else {
-    res.render("pages/loginPage", { errorMessage: "Please Login to continue" });
-  }
+  // } else {
+  //   res.render("pages/loginPage", { errorMessage: "Please Login to continue" });
+  // }
 });
 
 // get page of listing all current employees
@@ -48,31 +49,34 @@ router.post("/create", async function (req, res) {
 router.get("/", async function (req, res) {
   let empEmail = req.session.empEmail;
   var userType = req.session.userType;
-  if (empEmail) {
+  console.log(",,,,,,,,,,,,,,,,,,,,,",req.session)
+  if (!empEmail) {
     EmployeeController.getEmployees().then((data) => {
-      //res.send(data)
-      res.render("pages/empAll", { data: data, userType: userType });
+      console.log("employe data*****",data)
+      res.send(data)
+      //res.render("pages/empAll", { data: data, userType: userType });
     });
   } else {
-    res.render("pages/loginPage", { errorMessage: "Please Login to continue" });
+    res.send("failed backend employye get all")
+    //res.render("pages/loginPage", { errorMessage: "Please Login to continue" });
   }
 });
 
 // deleting an employee
 
-router.get("/delete/:id", async function (req, res) {
+router.delete("/delete/:id", async function (req, res) {
   let empEmail = req.session.empEmail;
   var userType = req.session.userType;
-  if (empEmail) {
+ // if (empEmail) {
     var id = req.params.id;
     console.log("inside delete employee route");
     EmployeeController.deleteEmployees(id).then((data) => {
-      //res.send(data)
-      res.redirect("/employees");
+      res.send(data)
+      //.redirect("/employees");
     });
-  } else {
-    res.render("pages/loginPage", { errorMessage: "Please Login to continue" });
-  }
+  // } else {
+  //   res.render("pages/loginPage", { errorMessage: "Please Login to continue" });
+  // }
 });
 
 // post method for editing an employee detail
@@ -80,7 +84,7 @@ router.get("/delete/:id", async function (req, res) {
 router.post("/edit/:id", async function (req, res) {
   let empEmail = req.session.empEmail;
   var userType = req.session.userType;
-  if (empEmail) {
+//  if (empEmail) {
     var input = req.body;
     var id = req.params.id;
     var myData = {
@@ -95,11 +99,12 @@ router.post("/edit/:id", async function (req, res) {
       usertype: input.usertype,
     };
     EmployeeController.saveEditEmployees(myData, id).then((data) => {
-      res.redirect("/employees");
+      res.send("succe sfro node baclend")
+      //res.redirect("/employees");
     });
-  } else {
-    res.render("pages/loginPage", { errorMessage: "Please Login to continue" });
-  }
+  // } else {
+  //   res.render("pages/loginPage", { errorMessage: "Please Login to continue" });
+  // }
 });
 
 // get method login page
@@ -113,6 +118,7 @@ router.get("/getLogin", async function (req, res) {
 // post method login page
 
 router.post("/postLogin", async function (req, res) {
+  console.log("re.BODY****************",req.body)
   var inpEmail = req.body.username;
   var inpPassword = req.body.password;
   EmployeeController.postLogin(inpEmail, inpPassword).then((data) => {
@@ -121,10 +127,12 @@ router.post("/postLogin", async function (req, res) {
       req.session.empEmail = data.email;
       req.session.userType = data.usertype;
       console.log("REQ SESSION*********", req.session);
-      res.redirect("/projects");
+      res.send(data)
+      //res.redirect("/projects");
     } else {
       console.log("inside else");
-      res.render("pages/loginPage", { errorMessage: "Invalid Credentials" });
+      res.send("invalid")
+      //res.render("pages/loginPage", { errorMessage: "Invalid Credentials" });
     }
   });
 });

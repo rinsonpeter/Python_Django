@@ -24,7 +24,7 @@ export class ProjectController {
 
     return newPrj;
   };
-  
+
   static saveEditProject = async (myData, id) => {
     const editPrj = await getConnection()
       .createQueryBuilder()
@@ -37,7 +37,7 @@ export class ProjectController {
 
   static editProject = async (id) => {
     const emp = await getRepository(Project)
-    .find({ where: { id: id } });
+      .find({ where: { id: id } });
     //console.log(emp);
     return emp;
   };
@@ -45,53 +45,53 @@ export class ProjectController {
   static infoProject = async (id) => {
     const prj: any = await getRepository(Project)
       .createQueryBuilder("prj")
-      .leftJoinAndSelect("prj.ProjectWorkR", "worksOn")
+      .leftJoinAndSelect("prj.ProjectWorkR", "worksOn") // on e.id=w.id
       .leftJoinAndSelect("worksOn.WorkEmpR", "emp")
       .where("prj.id=:id", { id: id })
       .getOne();
 
-      const addEmpList: any =await getRepository(Employee)
+    const addEmpList: any = await getRepository(Employee)
+      .createQueryBuilder("emp")
+      .leftJoinAndSelect('emp.EmpWorkR', "worksOn")
+      .where("worksOn.WorkProjectR = :id", { id: id })
+      //.andWhere("worksOn.WorkEmpR = :val",{val:''})
+      .getMany();
+
+    // console.log("addemp:****",addEmpList)
+
+    var authors = [];
+
+    for (let i in addEmpList) {
+      authors.push(addEmpList[i].id)
+    }
+    //console.log("authors**********",authors)
+
+    if (authors.length > 0) {
+      var posts: any = await getRepository(Employee)
         .createQueryBuilder("emp")
-        .leftJoinAndSelect('emp.EmpWorkR',"worksOn")
-        .where("worksOn.WorkProjectR = :id", { id: id })
-        //.andWhere("worksOn.WorkEmpR = :val",{val:''})
+        .where("emp.id NOT IN (:...authors)", { authors: authors })
         .getMany();
 
-       // console.log("addemp:****",addEmpList)
-
-        var authors = [];
-
-        for (let i in addEmpList){
-          authors.push(addEmpList[i].id)
-        }
-        //console.log("authors**********",authors)
-
-      if (authors.length >0){
-       var posts: any = await getRepository(Employee)
-       .createQueryBuilder("emp")
-       .where("emp.id NOT IN (:...authors)", { authors: authors })
-       .getMany();
-       
-      }
-      else{
-        var posts: any = await getRepository("Employee")
+    }
+    else {
+      var posts: any = await getRepository("Employee")
         .createQueryBuilder("emp")
         .getMany();
-      }  
+    }
 
-      //console.log("POSTS*****",posts)
+    //console.log("POSTS*****",posts)
 
-    return {prj,posts,id};
+    return { prj, posts, id };
   };
 
   static deleteProject = async (id) => {
     //console.log("inside controller delete emp")
     await getConnection()
-    .createQueryBuilder()
-    .delete()
-    .from(Project)
-    .where("id = :id", { id: id })
-    .execute();
+      .createQueryBuilder()
+      .delete()
+      .from(Project)
+      .where("id = :id", { id: id })
+      .execute();
     return
   };
 }

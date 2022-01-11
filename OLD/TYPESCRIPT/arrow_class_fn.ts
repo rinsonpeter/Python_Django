@@ -9,5 +9,6 @@ class Employee {
 
     display = () => console.log(this.empCode +' ' + this.empName)
 }
+
 let emp = new Employee(1, 'Ram');
 emp.display();

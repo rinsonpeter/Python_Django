@@ -124,12 +124,12 @@ router.post("/postLogin", async function (req, res) {
       req.session.empEmail = data.email;
       req.session.userType = data.usertype;
       console.log("REQ SESSION*********", req.session);
-      res.send(data)
-      //res.redirect("/projects");
+      //res.send(data)
+      res.redirect("/projects");
     } else {
       console.log("inside else");
-      res.send("invalid")
-      //res.render("pages/loginPage", { errorMessage: "Invalid Credentials" });
+      //res.send("invalid")
+      res.render("pages/loginPage", { errorMessage: "Invalid Credentials" });
     }
   });
 });

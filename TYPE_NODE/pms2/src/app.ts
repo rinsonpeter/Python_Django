@@ -55,8 +55,6 @@ createConnection().then(async connection => {
 
       // render the error page
       res.status(err.status || 500);
-
-
       res.render("pages/error");
 
     });

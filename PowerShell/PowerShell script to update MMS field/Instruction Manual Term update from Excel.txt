@@ -1,0 +1,19 @@
+Update Terms for corresponding files from csv 
+
+At a time only 1 termset for an MMS Col can updated 
+--------------------------------------------------
+For a Term set update csv as below:
+-------------------------------------------------
+Term     - Term name to update to
+Name     - Name of the File
+Library  - Name of library
+TermPath - Term path excluding term name with pipe symbol in between (1st line only)
+colName  - The column in sharepoint List (MMS Col) (1st line only)
+Url 	 - The sitecollection url		(1st line only)
+
+---------------------------------------------------
+Please see example in second sheet of template
+
+---------------------------------------------------
+input CSV path and Credentials when prompted
+

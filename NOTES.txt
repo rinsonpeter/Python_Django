@@ -1,4 +1,8 @@
-﻿
+﻿https://spankbang.com/6kmbs/video/yesjavonline+com+humiliation+re+x+pu+who+is+squid+many+times+by+the+big+cock+of+a+boss+who+feels+uncomfortable+to+death
+https://spankbang.com/6ktci/video/my+beloved+girlfriend+i+promise+to+give+her+happiness+was+taken+down+by+an+old+man+and+destroyed
+
+https://spankbang.com/6mhav/video/so+gorgeous
+https://spankbang.com/6m00g/video/super+humiliation+wife+who+was+made+into+a+toy+for+everyone+on+a+company+trip+3+sakura+tsuji
 INTRO:
         I am Rinson Peter,I am from Fortkochin,
         I am a BCA graduate passed out 2014.
@@ -2386,8 +2390,125 @@ If the Strapi server is not already running, in your terminal, cd into the my-pr
 GIT :
 	rm -f ./.git/index.lock
 	
-**************************************************************************	
-SHAREPOINT SPFX:
+**********************************************************************************************************************************************************
+**********************************************************************************************************************************************************	
+																SHAREPOINT SPFX:
+
+______________________________________________________________________________________________________________
+
+	CUSTOM TEMPLATE:
+		<content id="template">
+		<style>
+			/* Insert your CSS overrides here */
+			.example-themePrimary a {
+				color: {{@root.themeVariant.palette.themePrimary}};
+			}
+		</style>
+
+		<div class="template_root">
+			{{#if @root.hasPrimaryOrSecondaryResults}}
+				<ul class="template_defaultList">
+					{{#each items as |item|}}
+					<li class="template_listItem" tabindex="0">
+						{{#> resultTypes item=item}}
+						{{!-- The block below will be used as default item template if no result types matched --}}
+						<div class="template_result">
+							<pnp-fabric-icon data-file-extension='{{IconExt}}' data-image-url='{{SiteLogo}}'></pnp-fabric-icon>
+							<div class="template_contentContainer">
+								<span class="template_title example-themePrimary"><a href="{{getUrl item}}" target="_blank" data-interception="off">{{Title}}</a></span>
+								<my-custom-component data-my-string-param="{{Title}}" data-my-object-param="{{JSONstringify item}}"></my-custom-component>
+								<span>{{getSummary HitHighlightedSummary}}</span>
+								 <span>{{getNavigationPath 'https://panappsco.sharepoint.com/sites/GPEIntranetPortal/SampleMigrationSubSite1/Branding/'}}</span>
+								<span>{{getDate Created "LL"}}</span>
+								<div class="template_tags">
+									{{#if owstaxidmetadataalltagsinfo}}
+									<i class="ms-Icon ms-Icon--Tag" aria-hidden="true"></i>
+										{{#each (split owstaxidmetadataalltagsinfo ",") as |tag| }}
+										<a href="#owstaxidmetadataalltagsinfo:'{{trim tag}}'">{{tag}}</a>
+										{{/each}}
+									{{/if}}
+								</div>
+								<pnp-accordion data-accordion-header-text="Accordion Example" data-theme="Neutral" data-size="12" data-start-open="false" data-rounded-corners="false">
+									<h4>Title: {{Title}}</h4>
+									<pnp-popup>
+										<template id="popupclick">
+											<span>Popup Example - Click Me</span>
+										</template>
+										<template id="popupheader">
+											<span>Title: {{Title}}</span><br /><span>Header HTML here</span>
+										</template>
+										<template id="popupbody">
+											<span>Title: {{Title}}</span><br /><span>Body HTML here</span>
+										</template>
+									</pnp-popup>
+								</pnp-accordion>
+							</div>
+						</div>
+						{{/resultTypes}}
+					</li>
+					{{/each}}
+				</ul>
+				{{#if @root.paging.showPaging}}
+					<pnp-pagination
+						data-total-items="{{@root.paging.totalItemsCount}}"
+						data-hide-first-last-pages="{{@root.paging.hideFirstLastPages}}"
+						data-hide-disabled="{{@root.paging.hideDisabled}}"
+						data-hide-navigation="{{@root.paging.hideNavigation}}"
+						data-range="{{@root.paging.pagingRange}}"
+						data-items-count-per-page="{{@root.paging.itemsCountPerPage}}"
+						data-current-page-number="{{@root.paging.currentPageNumber}}"
+					>
+					</pnp-pagination>
+				{{/if}}
+			{{else}}
+				{{#unless showBlank}}
+					<div class="template_noResults">{{@root.strings.NoResultMessage}}</div>
+				{{/unless }}
+			{{/if}}
+		</div>
+	</content>
+
+	<content id="placeholder">
+		<style>
+			/* Insert your CSS overrides here */
+		</style>
+
+		<div id="pnp-modern-search_{{@root.instanceId}}" class="placeholder_root">
+			<ul class="template_defaultList">
+				{{#times @root.paging.totalItemsCount}}
+				<li class="template_listItem" tabindex="0">
+					<div class="template_result">
+								<div class="template_icon shimmer"></div>
+								<div class="template_contentContainer">
+									<span class="shimmer line" style="width: 60%"></span>
+									<span class="shimmer line" style="width: 100%"></span>
+									<span class="shimmer line" style="width: 100%"></span>
+									<span class="shimmer line" style="width: 35%"></span>
+									<span class="shimmer line" style="width: 20%"></span>
+								</div>
+							</div>
+					<div class="template_previewContainer ms-hiddenSm">
+						<div class="doc-container">
+							<div class="img-container">
+								<div class="shimmer img-preview" style="width: 120px;height: 70px;"></div>
+							</div>
+						</div>
+					</div>
+				</li>
+				{{/times}}
+			</ul>
+		</div>
+	</content>
+________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
 
 	VINOD:***********************************************
 
@@ -2402,22 +2523,31 @@ SHAREPOINT SPFX:
 	yo @microsoft/sharepoint
 	gulp trust-dev-cert
 	gulp serve
+______________________________________________________________________________________________________	
+	ANJALY:  CREATING PACKAGE
 	
-*******************************************************************************************	
-	ANJALY:
 						npm i -g generator-vuespfx
 
-			gulp bundle --ship			
-			gulp bundle --debug
+			gulp bundle --ship	
+				if error: The build failed because a task wrote output to stderr.	then 
+					gulp bundle --debug  
+						if error then 
+							gulp --inspect
 			gulp package-solution --ship
+_______________________________________________________________________________________________________			
+			7402cb85-7b20-4674-9c50-42bc31c2500e
+___________________________________________________________________________________________________________		
+		TESTING THE WEBPART ON WORKING PAGES:
 		
-
-
-
-******************************************************************************************	
-	
+		add this to the end of URL
+			
+			?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js
+			
+		LINKS:
+			https://panappsco.sharepoint.com/sites/GPEIntranetPortal/SitePages/Search1.aspx	
+			
+_______________________________________________________________________________________________________	
 	GENERATOR MICROSOFT:
-	
 	"initialPage": "https://localhost:8080/workbench",
 
 	https://https//panappsco.sharepoint.com/sites/RinzCorp/_layouts/workbench.aspx
@@ -2431,8 +2561,415 @@ SHAREPOINT SPFX:
 		
 		ZhoZC1UWwT3JiF1jhhs5
 		ZhoZC1UWwT3JiF1jhhs5
+		
+	
+	ACDA VOCA:
+	
+		https://acdivoca.sharepoint.com/sites/ACDIVOCAIntranet	
+		panapps@acdivoca-aux.org
+		reDesignintranet49$
+		
+		NAvin key
+		
+		
+		
+		
+
+		
+---------------------------------------------------------------------------------------		
+		SEPTEMBER 20, 2022  date format 
+		formatDateTime(outputs('Get_item')?['body/End_x0020_Date'],'MMMM dd, yyyy')
+
+-----------------------------------------------------------------------------
+		ADDRESS STATE ZIP FORMAT PA
+		concat(outputs('Get_item')?['body/City'],', ',outputs('Get_item')?['body/State'],', ', outputs('Get_item')?['body/Zip'])
 
 	
+	Project portfolio - agresso code 
+	CAPITAL total     - MIE&LODGING TOTAL
+	
+	e monitored and supervised by [Supervisor], [Supervisor Title] or such 
+	
+	
+	Supervisor Title  - supervisor job title
+	
+	POWEAPPS:
+			"$" & Text(Round(Value(Parent.Default),2),"[$-en-US]#,###0.00")
+			Value(DataCardValue42.Text)+Value(DataCardValue44.Text)
+			
+			Text(Value(Parent.Default),"[$-en-US]$ #,###")
+			Text(parent.default,"[$-en-US]$###,####.00")
+			
+			
+			
+			
+	
+	
+	POWERSHELL DATATYPE: 
+	
+	Invalid, Integer, Text, Note, DateTime, Counter, Choice, Lookup, Boolean, Number, Currency, URL, Computed, Threading, Guid, 
+	MultiChoice, GridChoice, Calculated, File, Attachments, User, Recurrence, CrossProjectLink, ModStat, Error, ContentTypeId, 
+	PageSeparator, ThreadIndex, WorkflowStatus, AllDayEvent, WorkflowEventType, Geolocation, OutcomeChoice, Location, Thumbnail, 
+	MaxItems
+	
+	SYNTAX:
+	
+	Add-PnPListItem -List "Demo List" -Values @{"Title" = "Test Title"; "Category"="Test Category"}
+	
+	set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+		set-ExecutionPolicy RemoteSigned 
+			
+	Connect-PnPOnline -Url $SiteURL -Interactive
+	
+		
+	New-PnPList -Title "Team Documents" -Template DocumentLibrary
+	
+	
+	Connect-PnPOnline -Url "https://domainName.sharepoint.com/sites/siteName"
+$termSet = New-PnPTermSet -Name "Category" -TermGroup "Categories"
+$term = New-PnPTerm -Name "Category1" -TermSet "Category" -TermGroup "Categories"
+Explanation
 
+
+	#Get List and Field Names:
+	
+	$lists = Get-PnPList -Includes Fields -Identity "Documents"
+	$lists.Fields
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	   
+#Variables for Processing
+$SiteUrl = "https://panappsco.sharepoint.com/sites/RinzCorp/"
+#$ListName="ExcelList"
+ 
+Write-Host "Connection to the site..." -ForegroundColor Yellow  
+Connect-PnPOnline -Url $SiteURL -Interactive           #Connect-PnpOnline -Url $SiteUrl -Credentials $Creds
+Write-Host "Connection successfull..." -ForegroundColor Yellow
+ 
+try{ 
+    $lists = Get-PnPList -Includes Fields -Identity "Documents"
+    $ListItems= Get-PnPListItem -List $lists
+    
+
+    if($lists.Count -gt 0){
+    $val = "AVDocuments|Field Project|Project Communications|Communication Category|Events"
+
+        foreach( $item in $ListItems){  
+            if($item["MMS_x0020_Category"].Label -eq "Administrative"){
+                
+                write-host "Inside if "$item["FileLeafRef"]
+                #$item["MMS_x0020_Category"].Label = "Administrative" #need to update as admininstrative later from excel field
+                #$item.update()
+                #$taxField = [Microsoft.SharePoint.Taxonomy.TaxonomyField]$item.Fields["MMS_x0020_Category"]
+                #$taxField.SetFieldValue($item,$term)
+
+                #$item.Update()
+                #$MMSField = $item.Fields["MMS_x0020_Category"] -as [Microsoft.SharePoint.Taxonomy.TaxonomyField]
+                #$MMSField
+                #$MMSField.setFieldValue($item,$val)
+                #$item.Update()
+                #Set-PnPListItem -List $lists -Identity $item -Values  @{$item["MMS_x0020_Category"] = $val}
+                Set-PnPListItem -List $lists -Identity $item -Values @{"MMS_x0020_Category" = $val}
+            }
+            else{
+                write-host "outside if" $item["FileLeafRef"]
+                }     
+        }
+    }    
+} 
+catch{  
+    write-host "$($_.Exception.Message)" -foregroundcolor red  
+} 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$x.GetType().Name
+	
+	
+	
+---------------------------------------------------------------------------------------------------	
+	$SiteUrl = "https://panappsco.sharepoint.com/sites/RinzCorp/"
+$filePath = "C:\Users\rinson.peter\Downloads\test.csv"  
+
+Write-Host "Connection to the site..." -ForegroundColor Yellow  
+$Cred = Get-Credential
+Connect-PnPOnline -Url $SiteURL -Credentials $Cred                #Connect-PnpOnline -Url $SiteUrl -Interactive           
+Write-Host "Connection successfull..." -ForegroundColor Yellow
+ 
+#Import CSV  
+$CSVRecords = Import-Csv $FilePath  
+Write-host -f Green "$($CSVRecords.count) Excel Rows Found!"  
+
+$LibraryName=""
+foreach( $Record in $CSVRecords){
+    $LibraryName=$Record.Library
+    $TermPath=$Record.TermPath
+    break 
+}
+
+$LibraryName
+$LibraryName.GetType().Name
+
+$lists = Get-PnPList -Includes Fields -Identity $LibraryName
+$ListItems= Get-PnPListItem -List $lists
+Write-host -f Green "$($ListItems.Count) list Rows Found!"
+
+
+#$lists = Get-PnPList -Includes Fields -Identity $LibraryName
+#$ListItems= Get-PnPListItem -List $lists
+
+ 
+foreach ($Record in $CSVRecords) {
+    $UpdateTerm= $Record.Term
+    $val=$TermPath+$UpdateTerm
+    if($ListItems.Count -gt 0){
+        foreach($item in $ListItems){
+            if($Record.Name -eq $item["FileLeafRef"]){
+                Write-host -f Red "inside "$item["FileLeafRef"]  $Record.Name
+                Set-PnPListItem -List $lists -Identity $item -Values @{"MMS_x0020_Category" = $val}
+            }
+            else{
+                #Write-host -f Red "No match" $item["FileLeafRef"] $Record.Name
+
+            }
+        }
+    }
+        
+} 
+---------------------------------------------------------------------------------------------------------
+
+  
+$csvPath = read-host "Please enter the .csv file path"
+$csvTerms = Import-CSV -path $csvPath #Eg: C:\Users\Administrator\Desktop\Createterms.csv
+
+
+#setting variables from csv 
+foreach( $Record in $csvTerms){
+    $LibraryName=$Record.Library
+    $TermPath=$Record.TermPath
+    $ColName=$Record.ColName
+    $SiteURL=$Record.Url    
+    break
+}
+
+Write-Host "Connection to the site..." -ForegroundColor Yellow  
+$Cred = Get-Credential
+Connect-PnPOnline -Url $SiteURL -Credentials $Cred                #Connect-PnpOnline -Url $SiteUrl -Interactive           
+Write-Host "Connection successfull..." -ForegroundColor Yellow
+
+$lists = Get-PnPList -Includes Fields -Identity $LibraryName
+$ListItems= Get-PnPListItem -List $lists
+Write-host -f Green "$($ListItems.Count) list Rows Found!"
+
+
+#update list item's MMS field 
+foreach ($Record in $csvTerms) {
+    $UpdateTerm= $Record.Term
+    $val=$TermPath+$UpdateTerm
+    if($ListItems.Count -gt 0){
+        foreach($item in $ListItems){
+            if($Record.Name -eq $item["FileLeafRef"]){
+                Write-host -f Green "inside "$item["FileLeafRef"]  $Record.Name
+                Set-PnPListItem -List $lists -Identity $item -Values @{$ColName = $val}
+            }
+        }
+    }
+        
+} 
+
+
+  	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	APP catalog
+	
+	
+	
+https://worldbankgroup.sharepoint.com.mcas.ms/sites/gpeportal-staging/AppCatalog/Forms/AllItems.aspx#InplviewHash82f9caae-541f-4143-b217-bf794b638f13=WebPartID%3D%7B82F9CAAE--541F--4143--B217--BF794B638F13%7D	
+	
+	
+	
+	
+Navin
+Navin
+	
+	
+https://worldbankgroup.sharepoint.com.mcas.ms/sites/gpeportal-staging/handbook/SitePages/GitLab-Mission-New.aspx
+	
+519709	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	My OFFICE 365 ACCOUNT:
+	
+	rinson.peter@panapps.co
+	rin@2021
+	
+	POWER AUTOMATE:
+	
+	powerautomate@acdivoca.org
+	Acdivoca2021!!
+	
+	AVIATOR:
+	
+	Panapps@acdivoca-aux.org
+	reDesignintranet45$
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WORKS:
+			Search part modified
+			LOA template issues (flows + power apps)
+			Import export Flows (to powerautomate)
+			SOCIAL MEDIA (fb & Linkedin)
+			Power shell script (Excel to sharepoint list)
+			Power shell script (Excel to update MMS Field)
+			handbook Edit (MarkDoen Webpart)
+			Advanced Page Properties 
+			
+
+	
+	
 	
 	
